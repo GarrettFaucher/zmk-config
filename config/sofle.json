@@ -81,7 +81,7 @@
       "identifier": "encoder_left",
       "compatible": "alps,ec11",
       "label": "LEFT_ENCODER",
-      "enabled": false
+      "enabled": true
     },
     {
       "ref": "right_encoder",
@@ -89,7 +89,7 @@
       "identifier": "encoder_right",
       "compatible": "alps,ec11",
       "label": "RIGHT_ENCODER",
-      "enabled": false
+      "enabled": true
     }
   ]
 }
