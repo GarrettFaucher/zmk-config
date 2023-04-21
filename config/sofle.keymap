@@ -7,6 +7,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    tapping-term-ms = <250>;
+};
+
 / {
     behaviors {
     };
