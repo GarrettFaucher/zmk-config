@@ -9,17 +9,6 @@
 
 / {
     behaviors {
-        nav_layer: nav_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "NAV_LAYER";
-            bindings =
-                <&kp>,
-                <&mo>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <53>;
-            tapping-term-ms = <200>;
-        };
     };
 
     keymap {
@@ -88,11 +77,11 @@
 
         number {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+      &trans        &trans        &trans        &trans        &trans  &trans                        &trans        &trans        &trans        &trans        &trans  &trans
+      &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &trans  &trans                        &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &trans  &trans
+&kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans                  &kp NUMBER_0  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
+   &kp ENTER  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp ENTER  &trans  &trans  &trans     &kp ENTER  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp ENTER  &trans
+                                  &trans        &trans        &trans  &trans  &trans  &trans        &trans        &trans        &trans        &trans
             >;
         };
 
