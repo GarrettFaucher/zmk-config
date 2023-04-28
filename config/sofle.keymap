@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-/ Define layer numbers
+// Define layer numbers
 #define BASE 0
 #define MEDIA 1
 #define NAV 2
