@@ -4,9 +4,23 @@
  * SPDX-License-Identifier: MIT
  */
 
+/ Define layer numbers
+#define BASE 0
+#define MEDIA 1
+#define NAV 2
+#define MACRO 3
+#define SYMBOL 4
+#define NUM 5
+#define FUNC 6
+#define GAMING 7
+
+// ZMK includes
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+
+// Personal includes
+#include "includes/behaviours_homerow_mods.dtsi"
 
 / {
     behaviors {
