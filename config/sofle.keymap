@@ -151,12 +151,11 @@
             &kp TAB         &kp Q         &kp W          &kp E                     &kp R        &kp T                                               &kp Y                      &kp U          &kp I         &kp O         &kp P        &kp DEL
           &kp LCTRL  &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LEFT_SHIFT F        &kp G                                               &kp H  &hm_shift_r RIGHT_SHIFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RGUI A        &kp SQT
           &kp LSHFT         &kp Z         &kp X          &kp C                     &kp V        &kp B     &kp C_MUTE            &tog 7              &kp N                      &kp M      &kp COMMA       &kp DOT      &kp FSLH      &kp RSHFT
-                                      &kp LCTRL       &kp LALT          &lt NUM LEFT_GUI  &lt 4 SPACE  &lt MACRO TAB  &lt SYMBOL ENTER  &lt NAV BACKSPACE               &lt FUNC DEL       &kp RALT     &kp RCTRL
+                                      &kp LCTRL       &kp LALT          &lt NUM LEFT_GUI  &lt NAV SPACE  &lt MACRO TAB  &lt SYMBOL ENTER  &lt NAV BACKSPACE               &lt FUNC DEL       &kp RALT     &kp RCTRL
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>,
-                <&inc_dec_kp C_VOL_DN C_VOL_DN>;
+                <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_VOL_DN C_VOL_DN>;
         };
 
         media {
