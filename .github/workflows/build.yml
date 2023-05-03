@@ -3,11 +3,3 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
-  draw:
-    permissions:
-      contents: write
-    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
-    with:
-      keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
-      output_folder: "assets"
-      commit_message: "Update keymap images"
