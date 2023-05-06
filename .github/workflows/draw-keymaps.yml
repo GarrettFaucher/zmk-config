@@ -1,5 +1,5 @@
 name: Draw ZMK keymaps
-on: [push, pull_request, workflow_dispatch]
+on: [workflow_dispatch]
 
 jobs:
   draw:
