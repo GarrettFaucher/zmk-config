@@ -1,3 +1,3 @@
 # zmk-config
-## Sofle V2 RGB Keymap
+## Sofle
 ![Keymap](assets/sofle.svg)
