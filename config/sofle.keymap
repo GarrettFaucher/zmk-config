@@ -12,7 +12,8 @@
 #define SYMBOL 4
 #define NUM 5
 #define FUNC 6
-#define GAMING 7
+#define MOBA 7
+#define FPS 8
 
 // ZMK includes
 
@@ -154,7 +155,7 @@
 &home_row TILDE ESC        &kp N1        &kp N2         &kp N3                    &kp N4         &kp N5                                              &kp N6                     &kp N7         &kp N8        &kp N9           &kp N0  &kp BACKSPACE
             &kp TAB         &kp Q         &kp W          &kp E                     &kp R          &kp T                                               &kp Y                      &kp U          &kp I         &kp O            &kp P        &kp DEL
           &kp LCTRL  &hm_l LGUI A  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LEFT_SHIFT F          &kp G                                               &kp H  &hm_shift_r RIGHT_SHIFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RGUI SEMI        &kp SQT
-          &kp LSHFT         &kp Z         &kp X          &kp C                     &kp V          &kp B     &kp C_MUTE            &tog 7              &kp N                      &kp M      &kp COMMA       &kp DOT         &kp FSLH      &kp RSHFT
+          &kp LSHFT         &kp Z         &kp X          &kp C                     &kp V          &kp B     &tog 8                &tog 7              &kp N                      &kp M      &kp COMMA       &kp DOT         &kp FSLH      &kp RSHFT
                                       &kp LCTRL       &kp LALT          &lt NUM LEFT_GUI  &lt NAV SPACE  &lt MACRO TAB  &lt SYMBOL ENTER  &lt NAV BACKSPACE               &lt FUNC DEL       &kp RALT     &kp RCTRL
             >;
 
@@ -221,7 +222,7 @@
             >;
         };
 
-        gaming {
+        MOBA {
             bindings = <
   &trans  &trans  &trans  &trans  &trans     &trans                     &trans  &trans  &trans  &trans  &trans  &trans
  &kp TAB  &trans  &trans  &trans  &trans     &trans                     &trans  &trans  &trans  &trans  &trans  &trans
@@ -231,13 +232,13 @@
             >;
         };
 
-        layer_8 {
+        FPS {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans   &kp W  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp A   &kp S   &kp D  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp W   &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp A   &kp S   &kp D   &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp LSHFT  &trans  &trans  &trans  &trans  &tog 8  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans   &mo 5  &kp SPACE  &kp LCTRL  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
