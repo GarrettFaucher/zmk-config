@@ -149,6 +149,7 @@
 
     keymap {
         compatible = "zmk,keymap";
+        label = "Default";
 
         default_layer {
             bindings = <
@@ -163,6 +164,7 @@
         };
 
         media {
+            label = "Media";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -173,6 +175,7 @@
         };
 
         nav {
+            label = "Navigation";
             bindings = <
 &trans  &trans  &trans  &trans  &trans      &trans                      &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans      &trans                  &kp K_REDO  &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &trans
@@ -183,6 +186,7 @@
         };
 
         macro {
+            label = "Macro";
             bindings = <
 &bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR                  &trans  &trans  &trans  &trans  &trans  &trans
  &bl BL_TOG        &trans        &trans        &trans        &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
@@ -203,6 +207,7 @@
         };
 
         number {
+            label = "Number";
             bindings = <
       &trans        &kp F1        &kp F2        &kp F3        &kp F4  &kp F5                        &trans        &trans        &trans        &trans        &trans  &trans
       &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans                        &trans  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &trans  &trans
@@ -213,6 +218,7 @@
         };
 
         function {
+            label = "Function";
             bindings = <
 &trans  &trans   &trans   &trans   &trans  &trans                  &trans  &trans   &trans   &trans   &trans  &trans
 &trans  &kp F1   &kp F2   &kp F3   &kp F4  &trans                  &trans  &kp F1   &kp F2   &kp F3   &kp F4  &trans
@@ -223,6 +229,7 @@
         };
 
         MOBA {
+            label = "MOBA";
             bindings = <
   &trans  &trans  &trans  &trans  &trans     &trans                     &trans  &trans  &trans  &trans  &trans  &trans
  &kp TAB  &trans  &trans  &trans  &trans     &trans                     &trans  &trans  &trans  &trans  &trans  &trans
@@ -233,6 +240,7 @@
         };
 
         FPS {
+            label = "FPS";
             bindings = <
 &kp TILDE  &kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                     &trans  &trans  &trans  &trans  &trans  &trans
     &kp O     &kp TAB         &kp Q         &kp W         &kp E         &kp R                     &trans  &trans  &trans  &trans  &trans  &trans
