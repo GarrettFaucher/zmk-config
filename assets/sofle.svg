@@ -31,7 +31,8 @@ rect.held, rect.combo.held {
 
 /* color accent for ghost (optional) keys */
 rect.ghost, rect.combo.ghost {
-    fill: #ddd;
+    stroke-dasharray: 4, 4;
+    stroke-width: 2;
 }
 
 text {
@@ -92,8 +93,8 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 </style>
-<g class="layer-default">
-<text x="30.0" y="28.0" class="label">default:</text>
+<g class="layer-Base">
+<text x="30.0" y="28.0" class="label">Base:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="58.0" width="52.0" height="52.0" class="key"/>
 <text x="58.0" y="84.0" class="tap">ESC</text>
 <text x="58.0" y="108.0" class="hold">~</text>
@@ -188,9 +189,9 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="312.0" y="226.0" width="52.0" height="52.0" class="key"/>
 <text x="338.0" y="252.0" class="tap">B</text>
 <rect rx="6.0" ry="6.0" x="368.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="394.0" y="252.0" class="tap">8</text>
+<text x="394.0" y="252.0" class="tap">FPS</text>
 <rect rx="6.0" ry="6.0" x="424.0" y="226.0" width="52.0" height="52.0" class="key"/>
-<text x="450.0" y="252.0" class="tap">7</text>
+<text x="450.0" y="252.0" class="tap">MOBA</text>
 <rect rx="6.0" ry="6.0" x="480.0" y="226.0" width="52.0" height="52.0" class="key"/>
 <text x="506.0" y="252.0" class="tap">N</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="226.0" width="52.0" height="52.0" class="key"/>
@@ -210,29 +211,29 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="256.0" y="282.0" width="52.0" height="52.0" class="key"/>
 <text x="282.0" y="308.0" class="tap">
 <tspan x="282.0" dy="-1.2em">LEFT</tspan><tspan x="282.0" dy="1.2em">GUI</tspan></text>
-<text x="282.0" y="332.0" class="hold">number</text>
+<text x="282.0" y="332.0" class="hold">Number</text>
 <rect rx="6.0" ry="6.0" x="312.0" y="282.0" width="52.0" height="52.0" class="key"/>
 <text x="338.0" y="308.0" class="tap">SPACE</text>
-<text x="338.0" y="332.0" class="hold">nav</text>
+<text x="338.0" y="332.0" class="hold" style="font-size: 70%">Navigation</text>
 <rect rx="6.0" ry="6.0" x="368.0" y="282.0" width="52.0" height="52.0" class="key"/>
 <text x="394.0" y="308.0" class="tap">TAB</text>
-<text x="394.0" y="332.0" class="hold">macro</text>
+<text x="394.0" y="332.0" class="hold">Macro</text>
 <rect rx="6.0" ry="6.0" x="424.0" y="282.0" width="52.0" height="52.0" class="key"/>
 <text x="450.0" y="308.0" class="tap">ENTER</text>
 <text x="450.0" y="332.0" class="hold">symbol</text>
 <rect rx="6.0" ry="6.0" x="480.0" y="282.0" width="52.0" height="52.0" class="key"/>
 <text x="506.0" y="308.0" class="tap" style="font-size: 78%">BACKSPACE</text>
-<text x="506.0" y="332.0" class="hold">nav</text>
+<text x="506.0" y="332.0" class="hold" style="font-size: 70%">Navigation</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="282.0" width="52.0" height="52.0" class="key"/>
 <text x="562.0" y="308.0" class="tap">DEL</text>
-<text x="562.0" y="332.0" class="hold" style="font-size: 88%">function</text>
+<text x="562.0" y="332.0" class="hold" style="font-size: 88%">Function</text>
 <rect rx="6.0" ry="6.0" x="592.0" y="282.0" width="52.0" height="52.0" class="key"/>
 <text x="618.0" y="308.0" class="tap">RALT</text>
 <rect rx="6.0" ry="6.0" x="648.0" y="282.0" width="52.0" height="52.0" class="key"/>
 <text x="674.0" y="308.0" class="tap">RCTRL</text>
 </g>
-<g class="layer-media">
-<text x="30.0" y="364.0" class="label">media:</text>
+<g class="layer-Media">
+<text x="30.0" y="364.0" class="label">Media:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="394.0" width="52.0" height="52.0" class="trans key"/>
 <text x="58.0" y="420.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="394.0" width="52.0" height="52.0" class="trans key"/>
@@ -354,8 +355,8 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="648.0" y="618.0" width="52.0" height="52.0" class="trans key"/>
 <text x="674.0" y="644.0" class="trans tap">▽</text>
 </g>
-<g class="layer-nav">
-<text x="30.0" y="700.0" class="label">nav:</text>
+<g class="layer-Navigation">
+<text x="30.0" y="700.0" class="label">Navigation:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="730.0" width="52.0" height="52.0" class="trans key"/>
 <text x="58.0" y="756.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="730.0" width="52.0" height="52.0" class="trans key"/>
@@ -393,15 +394,15 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="312.0" y="786.0" width="52.0" height="52.0" class="trans key"/>
 <text x="338.0" y="812.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="480.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<text x="506.0" y="812.0" class="tap">REDO</text>
+<text x="506.0" y="812.0" class="tap" style="font-size: 78%">LS(LC(Z))</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<text x="562.0" y="812.0" class="tap">LC(V)</text>
+<text x="562.0" y="812.0" class="tap">LC(Z)</text>
 <rect rx="6.0" ry="6.0" x="592.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<text x="618.0" y="812.0" class="tap">LC(C)</text>
+<text x="618.0" y="812.0" class="tap">LC(X)</text>
 <rect rx="6.0" ry="6.0" x="648.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<text x="674.0" y="812.0" class="tap">LC(X)</text>
+<text x="674.0" y="812.0" class="tap">LC(C)</text>
 <rect rx="6.0" ry="6.0" x="704.0" y="786.0" width="52.0" height="52.0" class="key"/>
-<text x="730.0" y="812.0" class="tap">LC(Z)</text>
+<text x="730.0" y="812.0" class="tap">LC(V)</text>
 <rect rx="6.0" ry="6.0" x="760.0" y="786.0" width="52.0" height="52.0" class="trans key"/>
 <text x="786.0" y="812.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="842.0" width="52.0" height="52.0" class="trans key"/>
@@ -430,14 +431,14 @@ path.combo {
 <text x="786.0" y="868.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="898.0" width="52.0" height="52.0" class="trans key"/>
 <text x="58.0" y="924.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="88.0" y="898.0" width="52.0" height="52.0" class="trans key"/>
-<text x="114.0" y="924.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="144.0" y="898.0" width="52.0" height="52.0" class="trans key"/>
-<text x="170.0" y="924.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="200.0" y="898.0" width="52.0" height="52.0" class="trans key"/>
-<text x="226.0" y="924.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="256.0" y="898.0" width="52.0" height="52.0" class="trans key"/>
-<text x="282.0" y="924.0" class="trans tap">▽</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="898.0" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="924.0" class="tap">LC(Z)</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="898.0" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="924.0" class="tap">LC(X)</text>
+<rect rx="6.0" ry="6.0" x="200.0" y="898.0" width="52.0" height="52.0" class="key"/>
+<text x="226.0" y="924.0" class="tap">LC(C)</text>
+<rect rx="6.0" ry="6.0" x="256.0" y="898.0" width="52.0" height="52.0" class="key"/>
+<text x="282.0" y="924.0" class="tap">LC(V)</text>
 <rect rx="6.0" ry="6.0" x="312.0" y="898.0" width="52.0" height="52.0" class="trans key"/>
 <text x="338.0" y="924.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="368.0" y="898.0" width="52.0" height="52.0" class="trans key"/>
@@ -478,22 +479,22 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="648.0" y="954.0" width="52.0" height="52.0" class="trans key"/>
 <text x="674.0" y="980.0" class="trans tap">▽</text>
 </g>
-<g class="layer-macro">
-<text x="30.0" y="1036.0" class="label">macro:</text>
+<g class="layer-Macro">
+<text x="30.0" y="1036.0" class="label">Macro:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="1066.0" width="52.0" height="52.0" class="key"/>
 <text x="58.0" y="1092.0" class="tap" style="font-size: 64%">&amp;bootloader</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<text x="114.0" y="1092.0" class="tap">
-<tspan x="114.0" dy="-0.6em">BT</tspan><tspan x="114.0" dy="1.2em">0</tspan></text>
+<text x="114.0" y="1092.0" class="tap">BT</text>
+<text x="114.0" y="1116.0" class="hold">0</text>
 <rect rx="6.0" ry="6.0" x="144.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<text x="170.0" y="1092.0" class="tap">
-<tspan x="170.0" dy="-0.6em">BT</tspan><tspan x="170.0" dy="1.2em">1</tspan></text>
+<text x="170.0" y="1092.0" class="tap">BT</text>
+<text x="170.0" y="1116.0" class="hold">1</text>
 <rect rx="6.0" ry="6.0" x="200.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<text x="226.0" y="1092.0" class="tap">
-<tspan x="226.0" dy="-0.6em">BT</tspan><tspan x="226.0" dy="1.2em">2</tspan></text>
+<text x="226.0" y="1092.0" class="tap">BT</text>
+<text x="226.0" y="1116.0" class="hold">2</text>
 <rect rx="6.0" ry="6.0" x="256.0" y="1066.0" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="1092.0" class="tap">
-<tspan x="282.0" dy="-0.6em">BT</tspan><tspan x="282.0" dy="1.2em">3</tspan></text>
+<text x="282.0" y="1092.0" class="tap">BT</text>
+<text x="282.0" y="1116.0" class="hold">3</text>
 <rect rx="6.0" ry="6.0" x="312.0" y="1066.0" width="52.0" height="52.0" class="key"/>
 <text x="338.0" y="1092.0" class="tap">
 <tspan x="338.0" dy="-0.6em">BT</tspan><tspan x="338.0" dy="1.2em">CLR</tspan></text>
@@ -509,9 +510,8 @@ path.combo {
 <text x="730.0" y="1092.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="760.0" y="1066.0" width="52.0" height="52.0" class="trans key"/>
 <text x="786.0" y="1092.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="32.0" y="1122.0" width="52.0" height="52.0" class="key"/>
-<text x="58.0" y="1148.0" class="tap">
-<tspan x="58.0" dy="-0.6em">&amp;bl</tspan><tspan x="58.0" dy="1.2em">BL_TOG</tspan></text>
+<rect rx="6.0" ry="6.0" x="32.0" y="1122.0" width="52.0" height="52.0" class="trans key"/>
+<text x="58.0" y="1148.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="1122.0" width="52.0" height="52.0" class="trans key"/>
 <text x="114.0" y="1148.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="144.0" y="1122.0" width="52.0" height="52.0" class="trans key"/>
@@ -536,10 +536,10 @@ path.combo {
 <text x="786.0" y="1148.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="1178.0" width="52.0" height="52.0" class="trans key"/>
 <text x="58.0" y="1204.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="88.0" y="1178.0" width="52.0" height="52.0" class="trans key"/>
-<text x="114.0" y="1204.0" class="trans tap">▽</text>
-<rect rx="6.0" ry="6.0" x="144.0" y="1178.0" width="52.0" height="52.0" class="trans key"/>
-<text x="170.0" y="1204.0" class="trans tap">▽</text>
+<rect rx="6.0" ry="6.0" x="88.0" y="1178.0" width="52.0" height="52.0" class="key"/>
+<text x="114.0" y="1204.0" class="tap" style="font-size: 60%">LC(LS(ESCAPE))</text>
+<rect rx="6.0" ry="6.0" x="144.0" y="1178.0" width="52.0" height="52.0" class="key"/>
+<text x="170.0" y="1204.0" class="tap" style="font-size: 78%">LS(LG(S))</text>
 <rect rx="6.0" ry="6.0" x="200.0" y="1178.0" width="52.0" height="52.0" class="trans key"/>
 <text x="226.0" y="1204.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="256.0" y="1178.0" width="52.0" height="52.0" class="trans key"/>
@@ -729,8 +729,8 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="648.0" y="1626.0" width="52.0" height="52.0" class="trans key"/>
 <text x="674.0" y="1652.0" class="trans tap">▽</text>
 </g>
-<g class="layer-number">
-<text x="30.0" y="1708.0" class="label">number:</text>
+<g class="layer-Number">
+<text x="30.0" y="1708.0" class="label">Number:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="1738.0" width="52.0" height="52.0" class="trans key"/>
 <text x="58.0" y="1764.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="1738.0" width="52.0" height="52.0" class="key"/>
@@ -851,8 +851,8 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="648.0" y="1962.0" width="52.0" height="52.0" class="trans key"/>
 <text x="674.0" y="1988.0" class="trans tap">▽</text>
 </g>
-<g class="layer-function">
-<text x="30.0" y="2044.0" class="label">function:</text>
+<g class="layer-Function">
+<text x="30.0" y="2044.0" class="label">Function:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="2074.0" width="52.0" height="52.0" class="trans key"/>
 <text x="58.0" y="2100.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="2074.0" width="52.0" height="52.0" class="trans key"/>
@@ -973,8 +973,8 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="648.0" y="2298.0" width="52.0" height="52.0" class="trans key"/>
 <text x="674.0" y="2324.0" class="trans tap">▽</text>
 </g>
-<g class="layer-7">
-<text x="30.0" y="2380.0" class="label">7:</text>
+<g class="layer-MOBA">
+<text x="30.0" y="2380.0" class="label">MOBA:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="2410.0" width="52.0" height="52.0" class="trans key"/>
 <text x="58.0" y="2436.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="2410.0" width="52.0" height="52.0" class="trans key"/>
@@ -1062,7 +1062,7 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="368.0" y="2578.0" width="52.0" height="52.0" class="trans key"/>
 <text x="394.0" y="2604.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="424.0" y="2578.0" width="52.0" height="52.0" class="key"/>
-<text x="450.0" y="2604.0" class="tap">7</text>
+<text x="450.0" y="2604.0" class="tap">MOBA</text>
 <rect rx="6.0" ry="6.0" x="480.0" y="2578.0" width="52.0" height="52.0" class="trans key"/>
 <text x="506.0" y="2604.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="536.0" y="2578.0" width="52.0" height="52.0" class="trans key"/>
@@ -1080,7 +1080,7 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="200.0" y="2634.0" width="52.0" height="52.0" class="trans key"/>
 <text x="226.0" y="2660.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="256.0" y="2634.0" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="2660.0" class="tap">number</text>
+<text x="282.0" y="2660.0" class="tap">Number</text>
 <rect rx="6.0" ry="6.0" x="312.0" y="2634.0" width="52.0" height="52.0" class="key"/>
 <text x="338.0" y="2660.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="368.0" y="2634.0" width="52.0" height="52.0" class="key"/>
@@ -1096,8 +1096,8 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="648.0" y="2634.0" width="52.0" height="52.0" class="trans key"/>
 <text x="674.0" y="2660.0" class="trans tap">▽</text>
 </g>
-<g class="layer-8">
-<text x="30.0" y="2716.0" class="label">8:</text>
+<g class="layer-FPS">
+<text x="30.0" y="2716.0" class="label">FPS:</text>
 <rect rx="6.0" ry="6.0" x="32.0" y="2746.0" width="52.0" height="52.0" class="key"/>
 <text x="58.0" y="2772.0" class="tap">~</text>
 <rect rx="6.0" ry="6.0" x="88.0" y="2746.0" width="52.0" height="52.0" class="key"/>
@@ -1183,7 +1183,7 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="312.0" y="2914.0" width="52.0" height="52.0" class="key"/>
 <text x="338.0" y="2940.0" class="tap">V</text>
 <rect rx="6.0" ry="6.0" x="368.0" y="2914.0" width="52.0" height="52.0" class="key"/>
-<text x="394.0" y="2940.0" class="tap">8</text>
+<text x="394.0" y="2940.0" class="tap">FPS</text>
 <rect rx="6.0" ry="6.0" x="424.0" y="2914.0" width="52.0" height="52.0" class="trans key"/>
 <text x="450.0" y="2940.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="480.0" y="2914.0" width="52.0" height="52.0" class="trans key"/>
@@ -1203,7 +1203,7 @@ path.combo {
 <rect rx="6.0" ry="6.0" x="200.0" y="2970.0" width="52.0" height="52.0" class="trans key"/>
 <text x="226.0" y="2996.0" class="trans tap">▽</text>
 <rect rx="6.0" ry="6.0" x="256.0" y="2970.0" width="52.0" height="52.0" class="key"/>
-<text x="282.0" y="2996.0" class="tap">number</text>
+<text x="282.0" y="2996.0" class="tap">Number</text>
 <rect rx="6.0" ry="6.0" x="312.0" y="2970.0" width="52.0" height="52.0" class="key"/>
 <text x="338.0" y="2996.0" class="tap">SPACE</text>
 <rect rx="6.0" ry="6.0" x="368.0" y="2970.0" width="52.0" height="52.0" class="key"/>
