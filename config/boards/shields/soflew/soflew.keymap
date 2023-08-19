@@ -19,8 +19,8 @@
 // urob includes (https://github.com/urob/zmk-nodefree-config)
 
 #include <behaviors.dtsi>
-#include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/keypos_def/keypos_58keys.h"
+#include "../../../../zmk-nodefree-config/helper.h"
+#include "../../../../zmk-nodefree-config/keypos_def/keypos_58keys.h"
 
 // ZMK includes
 
