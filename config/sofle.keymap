@@ -49,7 +49,7 @@
         label = "LEFT_ENCODER";
         a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <1>;
+        resolution = <2>;
         status = "okay";
     };
 
@@ -58,7 +58,7 @@
         label = "RIGHT_ENCODER";
         a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <1>;
+        resolution = <2>;
         status = "okay";
     };
 };
@@ -80,10 +80,7 @@
 &kp LSHFT       &kp Z        &kp X        &kp C         &kp V              &kp B          &tog 8         &tog 7            &kp N              &kp M               &kp COMMA     &kp DOT      &kp FSLH        &kp RSHFT
                              &kp LCTRL    &kp LALT      &lt NUM LEFT_GUI   &lt NAV SPACE  &lt MACRO TAB  &lt SYMBOL ENTER  &lt NAV BACKSPACE  &lt FUNC DEL        &kp RALT      &kp RCTRL
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp LC(Y) LC(Z)>,
-                <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LC(Y) LC(Z) &inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         media {
