@@ -43,28 +43,18 @@
                 <&kp>;
         };
     };
-
-    left_encoder: encoder_left {
-        compatible = "alps,ec11";
-        label = "LEFT_ENCODER";
-        a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <2>;
-        status = "okay";
-    };
-
-    right_encoder: encoder_right {
-        compatible = "alps,ec11";
-        label = "RIGHT_ENCODER";
-        a-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <2>;
-        status = "okay";
-    };
 };
 
 &nice_view_spi {
     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+};
+
+&left_encoder {
+    resolution = <2>;
+};
+
+&right_encoder {
+    resolution = <2>;
 };
 
 / {
