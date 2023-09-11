@@ -43,10 +43,22 @@
                 <&kp>;
         };
     };
+
+    sensors {
+        triggers-per-rotation = <20>;
+    };
 };
 
 &nice_view_spi {
     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+};
+
+&left_encoder {
+    steps = <80>;
+};
+
+&right_encoder {
+    steps = <80>;
 };
 
 / {
@@ -62,10 +74,7 @@
 &kp LSHFT       &kp Z        &kp X        &kp C         &kp V              &kp B          &tog 8         &tog 7            &kp N              &kp M               &kp COMMA     &kp DOT      &kp FSLH        &kp RSHFT
                              &kp LCTRL    &kp LALT      &lt NUM LEFT_GUI   &lt NAV SPACE  &lt MACRO TAB  &lt SYMBOL ENTER  &lt NAV BACKSPACE  &lt FUNC DEL        &kp RALT      &kp RCTRL
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp LC(Z) LS(LC(Z))>,
-                <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LC(Y) LC(Z) &inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         media {
