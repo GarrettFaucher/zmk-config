@@ -43,6 +43,10 @@
                 <&kp>;
         };
     };
+
+    sensors {
+        triggers-per-rotation = <20>;
+    };
 };
 
 &nice_view_spi {
@@ -50,11 +54,11 @@
 };
 
 &left_encoder {
-    resolution = <2>;
+    steps = <80>;
 };
 
 &right_encoder {
-    resolution = <2>;
+    steps = <80>;
 };
 
 / {
