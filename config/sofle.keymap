@@ -50,11 +50,11 @@
 };
 
 &left_encoder {
-    resolution = <1>;
+    resolution = <2>;
 };
 
 &right_encoder {
-    resolution = <1>;
+    resolution = <2>;
 };
 
 / {
