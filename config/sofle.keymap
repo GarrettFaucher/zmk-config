@@ -6,15 +6,14 @@
 // Define layer numbers
 
 #define ___ &trans
-#define BASE 0
-#define MEDIA 1
-#define NAV 2
-#define MACRO 3
-#define SYMBOL 4
-#define NUM 5
-#define FUNC 6
-#define MOBA 7
-#define FPS 8
+#define default_layer 0
+#define media 1
+#define nav 2
+#define macro 3
+#define symbol 4
+#define num 5
+#define func 6
+#define game 7
 
 // urob includes (https://github.com/urob/zmk-nodefree-config)
 
@@ -71,7 +70,7 @@
 &hrm TILDE ESC  &kp N1       &kp N2       &kp N3        &kp N4             &kp N5                                          &kp N6             &kp N7              &kp N8        &kp N9       &kp N0          &kp BACKSPACE
 &kp TAB         &kp Q        &kp W        &kp E         &kp R              &kp T                                           &kp Y              &kp U               &kp I         &kp O        &kp P           &kp DEL
 &kp LCTRL       &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrm LEFT_SHIFT F  &kp G                                           &kp H              &hrm RIGHT_SHIFT J  &hrm RCTRL K  &hrm RALT L  &hrm RGUI SEMI  &kp SQT
-&kp LSHFT       &kp Z        &kp X        &kp C         &kp V              &kp B          &tog 8         &tog 7            &kp N              &kp M               &kp COMMA     &kp DOT      &kp FSLH        &kp RSHFT
+&kp LSHFT       &kp Z        &kp X        &kp C         &kp V              &kp B          &tog 7         &kp C_MUTE            &kp N              &kp M               &kp COMMA     &kp DOT      &kp FSLH        &kp RSHFT
                              &kp LCTRL    &kp LALT      &lt NUM LEFT_GUI   &lt NAV SPACE  &lt MACRO TAB  &lt SYMBOL ENTER  &lt NAV BACKSPACE  &lt FUNC DEL        &kp RALT      &kp RCTRL
             >;
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z) &inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -142,25 +141,14 @@
             >;
         };
 
-        MOBA {
-            label = "MOBA";
+        game {
+            label = "Game";
             bindings = <
 &trans    &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB   &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
 &kp HOME  &kp A   &kp S   &kp D   &kp F   &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans  &trans  &trans  &trans     &trans     &tog 7  &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans     &tog 7     &trans  &trans  &trans  &trans  &trans  &trans  &trans
                   &trans  &trans  &mo 5   &kp SPACE  &kp LCTRL  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        FPS {
-            label = "FPS";
-            bindings = <
-&kp TILDE  &kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp O      &kp TAB     &kp Q         &kp W         &kp E         &kp R                            &trans  &trans  &trans  &trans  &trans  &trans
-&kp M      &kp HOME    &kp A         &kp S         &kp D         &kp G                            &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp LSHFT   &kp Z         &kp X         &kp C         &kp V         &tog 8     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                       &trans        &trans        &mo 5         &kp SPACE     &kp LCTRL  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
