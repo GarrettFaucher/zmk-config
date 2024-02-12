@@ -1,4 +1,8 @@
 # zmk-config
 Edited using https://nickcoutsos.github.io/keymap-editor/
+
 ## Sofle
-![Keymap](assets/sofle.svg)
+![Keymap](keymap-drawer/sofle.svg)
+
+## Helix Macro Pad
+![Keymap](keymap-drawer/helix.svg)
