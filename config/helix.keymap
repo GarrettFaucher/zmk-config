@@ -28,31 +28,41 @@
 
         lower_layer {
             bindings = <
-&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(F1)  &kp LS(F2)            &kp LS(F3)      &kp LS(F4)      &kp LS(F5)        &kp LS(F6)                                &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(F7)      &kp LS(F8)            &kp LS(F9)      &kp LS(F10)     &kp LS(F11)       &kp LS(F12)                               &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(F13)     &kp LS(F14)           &kp LS(F15)     &kp LS(F16)     &kp LS(F17)       &kp LS(F18)          &kp LS(F19)      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(F20)     &kp LS(F21)           &kp LS(F22)     &kp LS(F23)     &mo LOWER     &mo MIDDLE       &mo UPPER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE   &kp K_PLAY_PAUSE  &kp K_PREV   &kp K_NEXT   &kp C_VOL_DN  &kp C_VOLUME_UP                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(F1)   &kp LS(F2)        &kp LS(F3)   &kp LS(F4)   &kp LS(F5)    &kp LS(F6)                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(F7)   &kp LS(F8)        &kp LS(F9)   &kp LS(F10)  &kp LS(F11)   &kp LS(F12)                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(F13)  &kp LS(F14)       &kp LS(F15)  &kp LS(F16)  &kp LS(F17)   &kp LS(F18)      &kp LS(F19)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(F20)  &kp LS(F21)       &kp LS(F22)  &kp LS(F23)  &mo LOWER     &mo MIDDLE       &mo UPPER      &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         middle_layer {
             bindings = <
-&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LA(F1)  &kp LA(F2)            &kp LA(F3)      &kp LA(F4)      &kp LA(F5)        &kp LA(F6)                                &trans  &trans  &trans  &trans  &trans  &trans
-&kp LA(F7)      &kp LA(F8)            &kp LA(F9)      &kp LA(F10)     &kp LA(F11)       &kp LA(F12)                               &trans  &trans  &trans  &trans  &trans  &trans
-&kp LA(F13)     &kp LA(F14 )          &kp LA(F15)     &kp LA(F16)     &kp LA(F17)       &kp LA(F18)          &kp LA(F19)      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LA(F20)     &kp LA(F21)           &kp LA(F22)     &kp LA(F23)     &mo LOWER     &mo MIDDLE       &mo UPPER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE   &kp K_PLAY_PAUSE  &kp K_PREV   &kp K_NEXT   &kp C_VOL_DN  &kp C_VOLUME_UP                         &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(F1)   &kp LA(F2)        &kp LA(F3)   &kp LA(F4)   &kp LA(F5)    &kp LA(F6)                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(F7)   &kp LA(F8)        &kp LA(F9)   &kp LA(F10)  &kp LA(F11)   &kp LA(F12)                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(F13)  &kp LA(F14)       &kp LA(F15)  &kp LA(F16)  &kp LA(F17)   &kp LA(F18)      &kp LA(F19)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(F20)  &kp LA(F21)       &kp LA(F22)  &kp LA(F23)  &mo LOWER     &mo MIDDLE       &mo UPPER      &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         upper_layer {
             bindings = <
-&kp ESCAPE      &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                       &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(F1))  &kp LS(LA(F2))            &kp LS(LA(F3))      &kp LS(LA(F4))      &kp LS(LA(F5))        &kp LS(LA(F6))                                &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(F7))          &kp LS(LA(F8))            &kp LS(LA(F9))      &kp LS(LA(F10))     &kp LS(LA(F11))       &kp LS(LA(F12))                               &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(F13))         &kp LS(LA(F14))           &kp LS(LA(F15))     &kp LS(LA(F16))     &kp LS(LA(F17))       &kp LS(LA(F18))          &kp LS(LA(F19))      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LS(LA(F20))         &kp LS(LA(F21))           &kp LS(LA(F22))     &kp LS(LA(F23))     &mo LOWER     &mo MIDDLE       &mo UPPER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &kp K_PLAY_PAUSE  &kp K_PREV       &kp K_NEXT       &kp C_VOL_DN     &kp C_VOLUME_UP                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(F1))   &kp LS(LA(F2))    &kp LS(LA(F3))   &kp LS(LA(F4))   &kp LS(LA(F5))   &kp LS(LA(F6))                              &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(F7))   &kp LS(LA(F8))    &kp LS(LA(F9))   &kp LS(LA(F10))  &kp LS(LA(F11))  &kp LS(LA(F12))                             &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(F13))  &kp LS(LA(F14))   &kp LS(LA(F15))  &kp LS(LA(F16))  &kp LS(LA(F17))  &kp LS(LA(F18))  &kp LS(LA(F19))    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(F20))  &kp LS(LA(F21))   &kp LS(LA(F22))  &kp LS(LA(F23))  &mo LOWER        &mo MIDDLE       &mo UPPER          &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
