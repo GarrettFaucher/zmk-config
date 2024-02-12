@@ -5,11 +5,7 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/rgb.h>
 
 #define DEFAULT 0
 #define LOWER  1
@@ -22,41 +18,41 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp F1      &kp F2            &kp F3      &kp F4      &kp F5        &kp F6                              &trans  &trans  &trans  &trans  &trans  &trans
-&kp F7      &kp F8            &kp F9      &kp F10     &kp F11       &kp F12                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp F13     &kp F14           &kp F15     &kp F16     &kp F17       &kp F18          &kp F19    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp F20     &kp F21           &kp F22     &kp F23     &mo LOWER     &mo MIDDLE       &mo UPPER  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp F1      &kp F2            &kp F3      &kp F4      &kp F5        &kp F6                                &trans  &trans  &trans  &trans  &trans  &trans
+&kp F7      &kp F8            &kp F9      &kp F10     &kp F11       &kp F12                               &trans  &trans  &trans  &trans  &trans  &trans
+&kp F13     &kp F14           &kp F15     &kp F16     &kp F17       &kp F18          &kp F19      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F20     &kp F21           &kp F22     &kp F23     &mo LOWER     &mo MIDDLE       &mo UPPER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         lower_layer {
             bindings = <
-&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp F1      &kp F2            &kp F3      &kp F4      &kp F5        &kp F6                              &trans  &trans  &trans  &trans  &trans  &trans
-&kp F7      &kp F8            &kp F9      &kp F10     &kp F11       &kp F12                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp F13     &kp F14           &kp F15     &kp F16     &kp F17       &kp F18          &kp F19    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp F20     &kp F21           &kp F22     &kp F23     &mo LOWER     &mo MIDDLE       &mo UPPER  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(F1)  &kp F2            &kp F3      &kp F4      &kp F5        &kp F6                                &trans  &trans  &trans  &trans  &trans  &trans
+&kp F7      &kp F8            &kp F9      &kp F10     &kp F11       &kp F12                               &trans  &trans  &trans  &trans  &trans  &trans
+&kp F13     &kp F14           &kp F15     &kp F16     &kp F17       &kp F18          &kp F19      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F20     &kp F21           &kp F22     &kp F23     &mo LOWER     &mo MIDDLE       &mo UPPER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         middle_layer {
             bindings = <
-&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp F1      &kp F2            &kp F3      &kp F4      &kp F5        &kp F6                              &trans  &trans  &trans  &trans  &trans  &trans
-&kp F7      &kp F8            &kp F9      &kp F10     &kp F11       &kp F12                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp F13     &kp F14           &kp F15     &kp F16     &kp F17       &kp F18          &kp F19    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp F20     &kp F21           &kp F22     &kp F23     &mo LOWER     &mo MIDDLE       &mo UPPER  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp LA(F1)  &kp F2            &kp F3      &kp F4      &kp F5        &kp F6                                &trans  &trans  &trans  &trans  &trans  &trans
+&kp F7      &kp F8            &kp F9      &kp F10     &kp F11       &kp F12                               &trans  &trans  &trans  &trans  &trans  &trans
+&kp F13     &kp F14           &kp F15     &kp F16     &kp F17       &kp F18          &kp F19      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F20     &kp F21           &kp F22     &kp F23     &mo LOWER     &mo MIDDLE       &mo UPPER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         upper_layer {
             bindings = <
-&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp F1      &kp F2            &kp F3      &kp F4      &kp F5        &kp F6                              &trans  &trans  &trans  &trans  &trans  &trans
-&kp F7      &kp F8            &kp F9      &kp F10     &kp F11       &kp F12                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp F13     &kp F14           &kp F15     &kp F16     &kp F17       &kp F18          &kp F19    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp F20     &kp F21           &kp F22     &kp F23     &mo LOWER     &mo MIDDLE       &mo UPPER  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE      &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                       &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(LA(F1))  &kp F2            &kp F3      &kp F4      &kp F5        &kp F6                                &trans  &trans  &trans  &trans  &trans  &trans
+&kp F7          &kp F8            &kp F9      &kp F10     &kp F11       &kp F12                               &trans  &trans  &trans  &trans  &trans  &trans
+&kp F13         &kp F14           &kp F15     &kp F16     &kp F17       &kp F18          &kp F19      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp F20         &kp F21           &kp F22     &kp F23     &mo LOWER     &mo MIDDLE       &mo UPPER    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
