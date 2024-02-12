@@ -16,39 +16,21 @@
 #define RAISE  2
 #define ADJUST 3
 
-/* NOTE: At the time of the creation of this keymap, there are no specified codes for 'eisuu' and 'kana' input in ZMK.
-However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
-As such, those are in use within the default layer at this time.*/
-
 / {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // | GRAVE  |   1    |   2    |   3    |   4    |   5    |                                      |   6    |   7    |   8    |   9    |   0    |  DEL   |
-            // |  TAB   |   Q    |   W    |   E    |   R    |   T    |                                      |   Y    |   U    |   I    |   O    |   P    |  BSPC  |
-            // |  CTRL  |   A    |   S    |   D    |   F    |   G    |                                      |   H    |   J    |   K    |   L    |   ;    |   '    |
-            // |  SHIFT |   Z    |   X    |   C    |   V    |   B    |  LBKT  |                    |  RBKT  |   N    |   M    |   ,    |   .    |   /    |  RET   |
-            // | ADJUST |  ESC   |  ALT   |  LGUI  | EISUU  | LOWER  | SPACE  |                    |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
-
             bindings = <
-&kp F1      &kp F2            &kp F3      &kp F4      &kp C_VOL_DN  &kp C_VOLUME_UP                       &trans     &trans     &trans     &trans      &trans     &trans
-&kp F9      &kp F10           &kp F11     &kp F12     &kp F13       &kp F14                               &kp Y      &kp U      &kp I      &kp O       &kp P      &kp BSPC
-&kp F15     &kp F16           &kp F17     &kp F18     &kp F19       &kp F20                               &kp H      &kp J      &kp K      &kp L       &kp SEMI   &kp SQT
-&kp F21     &kp F21           &kp F23     &kp F24     &trans        &trans           &trans    &kp RBKT   &kp N      &kp M      &kp COMMA  &kp PERIOD  &kp SLASH  &kp RET
-&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &mo 1         &mo 2            &mo 3     &kp SPACE  &mo RAISE  &kp LANG1  &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT
+&kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                      &trans     &trans     &trans     &trans      &trans     &trans
+&kp F1      &kp F2            &kp F3      &kp F4      &kp F5        &kp F6                               &trans     &trans     &trans     &trans      &trans     &trans
+&kp F7      &kp F8            &kp F9      &kp F10     &kp F11       &kp F12                              &trans     &trans     &trans     &trans      &trans     &trans
+&kp F13     &kp F14           &kp F15     &kp F16     &kp F17       &kp F18          &kp F19   &kp F20   &trans     &trans     &trans     &trans      &trans     &trans
+&kp F21     &kp F22           &kp F23     &kp F24     &mo 1         &mo 2            &mo 3     &trans    &trans     &trans     &trans     &trans      &trans     &trans
             >;
         };
 
         lower_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |      |      |      |      |      |      |                                  |      |      |      |      |      |      |
-            // |  ~   |  !   |  @   |  #   |  $   |  %   |                                  |  ^   |  &   |  *   |  (   |  )   |      |
-            // |      |      |      |      |      |      |                                  |      |  _   |  +   |  {   |  }   | PIPE |
-            // |      |      |      |      |      |      |  (   |                    |  )   |      |      |      | HOME | END  |      |
-            // |      |      |      |      |      |      |      |                    |      |      |      |      |      |      |      |
-
             bindings = <
 &trans     &trans    &trans  &trans    &trans    &trans                           &trans     &trans     &trans     &trans    &trans    &trans
 &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                        &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
@@ -59,13 +41,6 @@ As such, those are in use within the default layer at this time.*/
         };
 
         raise_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |       |       |       |       |       |       |                                    |       |       |       |       |       |       |
-            // |   `   |   1   |   2   |   3   |   4   |   5   |                                    |   6   |   7   |   8   |   9   |   0   |  DEL  |
-            // |       |  F1   |  F2   |  F3   |  F4   |  F5   |                                    |  F6   |   -   |   =   |   [   |   ]   |   \   |
-            // |       |  F7   |  F8   |  F9   |  F10  |  F11  |       |                    |       |  F12  |       | PSCRN | PG_DN | PG_UP |       |
-            // |       |       |       |       |       |       |       |                    |       |       |       | NEXT  | VOL-  | VOL+  | PLAY  |
-
             bindings = <
 &trans     &trans  &trans  &trans  &trans   &trans                     &trans   &trans     &trans      &trans        &trans        &trans
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                     &kp N6   &kp N7     &kp N8      &kp N9        &kp N0        &kp DEL
@@ -76,13 +51,6 @@ As such, those are in use within the default layer at this time.*/
         };
 
         adjust_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |    `     |    !     |    @     |    #     |    $     |    %     |                                          |    ^     |    &     |    *     |    (     |    )     |  EP TOG  |
-            // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          | RGB EFF+ | RGB HUE+ | RGB SAT+ | RGB SPD+ | RGB BRI+ | RGB TOG  |
-            // |  BT NXT  | OUT TOG  | OUT USB  | OUT BLE  |          |          |                                          | RGB EFF- | RGB HUE- | RGB SAT- | RGB SPD- | RGB BRI- |          |
-            // |  BT PRV  |          |          |          |          |          |    {     |                    |    }     |          |          |          |          |          |          |
-            // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
-
             bindings = <
 &kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                           &kp CARET        &kp AMPS         &kp ASTRK        &kp LPAR         &kp RPAR         &ext_power EP_TOG
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG
