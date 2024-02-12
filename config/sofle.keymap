@@ -42,7 +42,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
-        },
+        };
         hmr: hmr {
             flavor = "balanced";
             tapping-term-ms = <280>;
@@ -51,7 +51,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
-        }
+        };
     };
 
     sensors {
