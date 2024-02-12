@@ -7,13 +7,13 @@
 
 #define ___ &trans
 #define BASE 0
-#define MEDIA 1
-#define NAV 2
-#define MACRO 3
-#define SYMBOL 4
-#define NUM 5
-#define FUNC 6
-#define GAME 7
+#define GAME 1
+#define MEDIA 2
+#define NAV 3
+#define MACRO 4
+#define SYMBOL 5
+#define NUM 6
+#define FUNC 7
 
 #include <behaviors.dtsi>
 
@@ -71,6 +71,17 @@
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z) &inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
+        game {
+            label = "Game";
+            bindings = <
+&trans    &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB   &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp HOME  &kp A   &kp S   &kp D   &kp F   &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans     &tog 7     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &mo 5   &kp SPACE  &kp LCTRL  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
         media {
             label = "Media";
             bindings = <
@@ -105,6 +116,7 @@
         };
 
         symbol {
+            label = "Symbol";
             bindings = <
 &trans  &trans            &trans         &trans            &trans             &trans                      &trans     &trans      &trans                &trans                 &ext_power EP_TOG  &bootloader
 &trans  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                  &kp AMPS   &kp UNDER   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT        &trans
@@ -133,17 +145,6 @@
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans                  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans  &trans  &trans  &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
                 &trans   &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans   &trans
-            >;
-        };
-
-        GAME {
-            label = "Game";
-            bindings = <
-&trans    &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB   &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp HOME  &kp A   &kp S   &kp D   &kp F   &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans  &trans  &trans  &trans     &tog 7     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &mo 5   &kp SPACE  &kp LCTRL  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
