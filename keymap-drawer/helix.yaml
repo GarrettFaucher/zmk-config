@@ -1,0 +1,262 @@
+layout: {qmk_keyboard: helix/rev3_5rows}
+layers:
+  default:
+  - ESCAPE
+  - PLAY PAUSE
+  - PREV
+  - NEXT
+  - VOL DN
+  - VOLUME UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F13
+  - F14
+  - F15
+  - F16
+  - F17
+  - F18
+  - F19
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F20
+  - F21
+  - F22
+  - F23
+  - lower
+  - middle
+  - upper
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  lower:
+  - ESCAPE
+  - PLAY PAUSE
+  - PREV
+  - NEXT
+  - VOL DN
+  - VOLUME UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LS(F1)
+  - LS(F2)
+  - LS(F3)
+  - LS(F4)
+  - LS(F5)
+  - LS(F6)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LS(F7)
+  - LS(F8)
+  - LS(F9)
+  - LS(F10)
+  - LS(F11)
+  - LS(F12)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LS(F13)
+  - LS(F14)
+  - LS(F15)
+  - LS(F16)
+  - LS(F17)
+  - LS(F18)
+  - LS(F19)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LS(F20)
+  - LS(F21)
+  - LS(F22)
+  - LS(F23)
+  - {t: lower, type: held}
+  - middle
+  - upper
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  middle:
+  - ESCAPE
+  - PLAY PAUSE
+  - PREV
+  - NEXT
+  - VOL DN
+  - VOLUME UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LA(F1)
+  - LA(F2)
+  - LA(F3)
+  - LA(F4)
+  - LA(F5)
+  - LA(F6)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LA(F7)
+  - LA(F8)
+  - LA(F9)
+  - LA(F10)
+  - LA(F11)
+  - LA(F12)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LA(F13)
+  - LA(F14)
+  - LA(F15)
+  - LA(F16)
+  - LA(F17)
+  - LA(F18)
+  - LA(F19)
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LA(F20)
+  - LA(F21)
+  - LA(F22)
+  - LA(F23)
+  - lower
+  - {t: middle, type: held}
+  - upper
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  upper:
+  - ESCAPE
+  - PLAY PAUSE
+  - PREV
+  - NEXT
+  - VOL DN
+  - VOLUME UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LS(LA(F1))
+  - LS(LA(F2))
+  - LS(LA(F3))
+  - LS(LA(F4))
+  - LS(LA(F5))
+  - LS(LA(F6))
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LS(LA(F7))
+  - LS(LA(F8))
+  - LS(LA(F9))
+  - LS(LA(F10))
+  - LS(LA(F11))
+  - LS(LA(F12))
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LS(LA(F13))
+  - LS(LA(F14))
+  - LS(LA(F15))
+  - LS(LA(F16))
+  - LS(LA(F17))
+  - LS(LA(F18))
+  - LS(LA(F19))
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LS(LA(F20))
+  - LS(LA(F21))
+  - LS(LA(F22))
+  - LS(LA(F23))
+  - lower
+  - middle
+  - {t: upper, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
