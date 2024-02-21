@@ -50,6 +50,16 @@
             >;
         };
 
+        game {
+            label = "Game";
+            bindings = <
+&kp TAB   &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp HOME  &kp A   &kp S   &kp D   &kp F   &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+                          &mo 5   &kp SPACE  &kp LCTRL                  &trans  &trans  &trans
+            >;
+        };
+
         media {
             label = "Media";
             bindings = <
