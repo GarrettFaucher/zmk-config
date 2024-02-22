@@ -1,0 +1,15 @@
+file_format: "1"
+id: soflew
+name: SofleW
+type: shield
+url: https://github.com/josefadamcik/SofleKeyboard
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - encoder
+siblings:
+  - soflew_left
+  - soflew_right
+  - soflew_dongle
