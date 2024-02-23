@@ -66,12 +66,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   lower:
-  - ESCAPE
-  - PLAY PAUSE
-  - PREV
-  - NEXT
-  - VOL DN
-  - VOLUME UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -120,9 +120,9 @@ layers:
   - LS(F21)
   - LS(F22)
   - LS(F23)
-  - {t: lower, type: held}
-  - middle
-  - upper
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -131,12 +131,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   middle:
-  - ESCAPE
-  - PLAY PAUSE
-  - PREV
-  - NEXT
-  - VOL DN
-  - VOLUME UP
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -185,9 +185,9 @@ layers:
   - LA(F21)
   - LA(F22)
   - LA(F23)
-  - lower
-  - {t: middle, type: held}
-  - upper
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -196,12 +196,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   upper:
-  - ESCAPE
-  - PLAY PAUSE
-  - PREV
-  - NEXT
-  - VOL DN
-  - VOLUME UP
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -250,9 +250,9 @@ layers:
   - LS(LA(F21))
   - LS(LA(F22))
   - LS(LA(F23))
-  - lower
-  - middle
-  - {t: upper, type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
