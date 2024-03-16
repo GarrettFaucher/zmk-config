@@ -5,8 +5,11 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
+ #include <dt-bindings/zmk/keys.h>
+ #include <dt-bindings/zmk/bt.h>
+ #include <dt-bindings/zmk/rgb.h>
+ #include <dt-bindings/zmk/ext_power.h>
+ #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
 #define LOWER  1
@@ -18,6 +21,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            label = "F Keys";
             bindings = <
 &kp ESCAPE  &kp K_PLAY_PAUSE  &kp K_PREV  &kp K_NEXT  &kp C_VOL_DN  &kp C_VOLUME_UP                       &trans  &trans  &trans  &trans  &trans  &trans
 &kp F1      &kp F2            &kp F3      &kp F4      &kp F5        &kp F6                                &trans  &trans  &trans  &trans  &trans  &trans
@@ -28,6 +32,7 @@
         };
 
         lower_layer {
+            label = "F+Shift";
             bindings = <
 &trans       &trans       &trans       &trans       &trans       &trans                              &trans  &trans  &trans  &trans  &trans  &trans
 &kp LS(F1)   &kp LS(F2)   &kp LS(F3)   &kp LS(F4)   &kp LS(F5)   &kp LS(F6)                          &trans  &trans  &trans  &trans  &trans  &trans
@@ -38,6 +43,7 @@
         };
 
         middle_layer {
+            label = "F+Alt";
             bindings = <
 &trans       &trans       &trans       &trans       &trans       &trans                              &trans  &trans  &trans  &trans  &trans  &trans
 &kp LA(F1)   &kp LA(F2)   &kp LA(F3)   &kp LA(F4)   &kp LA(F5)   &kp LA(F6)                          &trans  &trans  &trans  &trans  &trans  &trans
@@ -48,6 +54,7 @@
         };
 
         upper_layer {
+            label = "Shft+Alt";
             bindings = <
 &bootloader      &trans           &trans           &trans           &trans           &bt BT_CLR                                  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LS(LA(F1))   &kp LS(LA(F2))   &kp LS(LA(F3))   &kp LS(LA(F4))   &kp LS(LA(F5))   &kp LS(LA(F6))                              &trans  &trans  &trans  &trans  &trans  &trans
