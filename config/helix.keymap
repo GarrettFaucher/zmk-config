@@ -54,7 +54,7 @@
         };
 
         upper_layer {
-            label = "F+Shift+Alt";
+            label = "Shft+Alt";
             bindings = <
 &bootloader      &trans           &trans           &trans           &trans           &bt BT_CLR                                  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LS(LA(F1))   &kp LS(LA(F2))   &kp LS(LA(F3))   &kp LS(LA(F4))   &kp LS(LA(F5))   &kp LS(LA(F6))                              &trans  &trans  &trans  &trans  &trans  &trans
