@@ -24,9 +24,3 @@
 &right_encoder {
     status = "okay";
 };
-
-/ {
-    chosen {
-        zephyr,display = &nice_view;
-    };
-};
