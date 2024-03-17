@@ -16,3 +16,9 @@
         , <&pro_micro 19 GPIO_ACTIVE_HIGH>
         ;
 };
+
+/ {
+    chosen {
+        zephyr,display = &oled;
+    };
+};
