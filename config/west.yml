@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-dongle-display
       remote: garrettfaucher
-      revision: ordering-of-battery
+      revision: main
   self:
     path: config
