@@ -63,11 +63,11 @@
         game {
             label = "Game";
             bindings = <
-&trans    &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB   &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&kp HOME  &kp A   &kp S   &kp D   &kp F   &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans    &trans  &trans  &trans  &trans  &trans     &tog GAME  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &mo 5   &kp SPACE  &kp LCTRL  &trans  &trans  &trans  &trans  &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB     &trans  &trans  &trans  &trans  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp HOME    &kp A   &kp S   &kp D   &kp F   &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans  &trans  &trans  &trans     &tog GAME  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans  &trans  &mo 5   &kp SPACE  &kp LCTRL  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
