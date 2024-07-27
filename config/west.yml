@@ -1,13 +1,13 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: nguyendown
+      url-base: https://github.com/nguyendown
     - name: garrettfaucher
       url-base: https://github.com/garrettfaucher
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: nguyendown
+      revision: behaviors/non-overlapping
       import: app/west.yml
     - name: zmk-dongle-display-091-oled
       remote: garrettfaucher
