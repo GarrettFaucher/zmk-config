@@ -107,7 +107,7 @@
         symbol {
             label = "Symbol";
             bindings = <
-&trans  &trans            &trans         &trans            &trans             &trans                      &trans     &trans      &trans                &trans                 &ext_power EP_TOG  &bootloader
+&trans  &trans            &trans         &trans            &trans             &trans                      &trans     &trans      &trans                &studio_unlock         &ext_power EP_TOG  &bootloader
 &trans  &kp SINGLE_QUOTE  &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp PERIOD                  &kp AMPS   &kp UNDER   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT        &trans
 &trans  &kp EXCL          &kp MINUS      &kp PLUS          &kp EQUAL          &kp HASH                    &kp PIPE   &kp COLON   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp QUESTION       &trans
 &trans  &kp CARET         &kp SLASH      &kp STAR          &kp BACKSLASH      &kp UNDER   &trans  &trans  &kp TILDE  &kp DOLLAR  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT             &trans
