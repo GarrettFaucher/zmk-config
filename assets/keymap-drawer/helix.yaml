@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: helix/rev3_5rows}
+layout: {zmk_keyboard: helix}
 layers:
-  default:
+  F Keys:
   - ESCAPE
   - PLAY PAUSE
   - PREV
@@ -55,9 +55,9 @@ layers:
   - F21
   - F22
   - F23
-  - lower
-  - middle
-  - upper
+  - F+Shift
+  - F+Alt
+  - Shft+Alt
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -65,7 +65,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  lower:
+  F+Shift:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,37 +78,37 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LS(F1)
-  - LS(F2)
-  - LS(F3)
-  - LS(F4)
-  - LS(F5)
-  - LS(F6)
+  - Sft+F1
+  - Sft+F2
+  - Sft+F3
+  - Sft+F4
+  - Sft+F5
+  - Sft+F6
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LS(F7)
-  - LS(F8)
-  - LS(F9)
-  - LS(F10)
-  - LS(F11)
-  - LS(F12)
+  - Sft+F7
+  - Sft+F8
+  - Sft+F9
+  - Sft+F10
+  - Sft+F11
+  - Sft+F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LS(F13)
-  - LS(F14)
-  - LS(F15)
-  - LS(F16)
-  - LS(F17)
-  - LS(F18)
-  - LS(F19)
+  - Sft+F13
+  - Sft+F14
+  - Sft+F15
+  - Sft+F16
+  - Sft+F17
+  - Sft+F18
+  - Sft+F19
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -116,10 +116,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LS(F20)
-  - LS(F21)
-  - LS(F22)
-  - LS(F23)
+  - Sft+F20
+  - Sft+F21
+  - Sft+F22
+  - Sft+F23
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -130,7 +130,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  middle:
+  F+Alt:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -143,37 +143,37 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LA(F1)
-  - LA(F2)
-  - LA(F3)
-  - LA(F4)
-  - LA(F5)
-  - LA(F6)
+  - Alt+F1
+  - Alt+F2
+  - Alt+F3
+  - Alt+F4
+  - Alt+F5
+  - Alt+F6
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LA(F7)
-  - LA(F8)
-  - LA(F9)
-  - LA(F10)
-  - LA(F11)
-  - LA(F12)
+  - Alt+F7
+  - Alt+F8
+  - Alt+F9
+  - Alt+F10
+  - Alt+F11
+  - Alt+F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LA(F13)
-  - LA(F14)
-  - LA(F15)
-  - LA(F16)
-  - LA(F17)
-  - LA(F18)
-  - LA(F19)
+  - Alt+F13
+  - Alt+F14
+  - Alt+F15
+  - Alt+F16
+  - Alt+F17
+  - Alt+F18
+  - Alt+F19
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -181,10 +181,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LA(F20)
-  - LA(F21)
-  - LA(F22)
-  - LA(F23)
+  - Alt+F20
+  - Alt+F21
+  - Alt+F22
+  - Alt+F23
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -195,7 +195,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  upper:
+  Shft+Alt:
   - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -208,37 +208,37 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LS(LA(F1))
-  - LS(LA(F2))
-  - LS(LA(F3))
-  - LS(LA(F4))
-  - LS(LA(F5))
-  - LS(LA(F6))
+  - Sft+Alt+F1
+  - Sft+Alt+F2
+  - Sft+Alt+F3
+  - Sft+Alt+F4
+  - Sft+Alt+F5
+  - Sft+Alt+F6
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LS(LA(F7))
-  - LS(LA(F8))
-  - LS(LA(F9))
-  - LS(LA(F10))
-  - LS(LA(F11))
-  - LS(LA(F12))
+  - Sft+Alt+F7
+  - Sft+Alt+F8
+  - Sft+Alt+F9
+  - Sft+Alt+F10
+  - Sft+Alt+F11
+  - Sft+Alt+F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LS(LA(F13))
-  - LS(LA(F14))
-  - LS(LA(F15))
-  - LS(LA(F16))
-  - LS(LA(F17))
-  - LS(LA(F18))
-  - LS(LA(F19))
+  - Sft+Alt+F13
+  - Sft+Alt+F14
+  - Sft+Alt+F15
+  - Sft+Alt+F16
+  - Sft+Alt+F17
+  - Sft+Alt+F18
+  - Sft+Alt+F19
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -246,10 +246,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LS(LA(F20))
-  - LS(LA(F21))
-  - LS(LA(F22))
-  - LS(LA(F23))
+  - Sft+Alt+F20
+  - Sft+Alt+F21
+  - Sft+Alt+F22
+  - Sft+Alt+F23
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}

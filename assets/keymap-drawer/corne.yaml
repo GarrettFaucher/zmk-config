@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
-  default:
+  Base:
   - ESCAPE
   - Q
   - W
@@ -37,13 +37,13 @@ layers:
   - .
   - /
   - RSHFT
-  - {t: LEFT GUI, h: number}
-  - {t: SPACE, h: nav}
-  - {t: TAB, h: macro}
-  - {t: ENTER, h: symbol}
-  - {t: BACKSPACE, h: nav}
-  - {t: DEL, h: function}
-  game:
+  - {t: LEFT GUI, h: Number}
+  - {t: SPACE, h: Navigation}
+  - {t: TAB, h: Macro}
+  - {t: ENTER, h: Symbol}
+  - {t: BACKSPACE, h: Navigation}
+  - {t: DEL, h: Function}
+  Game:
   - TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -80,13 +80,13 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - symbol
+  - Symbol
   - SPACE
   - LCTRL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  media:
+  Media:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -129,18 +129,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  nav:
+  Navigation:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LS(LC(Z))
-  - LC(Z)
-  - LC(X)
-  - LC(C)
-  - LC(V)
+  - Sft+Ctl+Z
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -155,10 +155,10 @@ layers:
   - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LC(Z)
-  - LC(X)
-  - LC(C)
-  - LC(V)
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - HOME
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  macro:
+  Macro:
   - '&bootloader'
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -186,8 +186,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - LC(LS(ESCAPE))
-  - LS(LG(S))
+  - Ctl+Sft+ESCAPE
+  - Sft+Gui+S
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -215,7 +215,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  symbol:
+  Symbol:
   - {t: ▽, type: trans}
   - ''''
   - <
@@ -258,7 +258,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  number:
+  Number:
   - {t: ▽, type: trans}
   - '7'
   - '8'
@@ -301,7 +301,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  function:
+  Function:
   - {t: ▽, type: trans}
   - F1
   - F2
