@@ -3,3 +3,9 @@
 
 &left_encoder { steps = <80>; };
 &right_encoder { steps = <80>; };
+
+/ {
+    chosen {
+        zmk,physical-layout = &josefadamcik_sofle_layout;
+    };
+};
