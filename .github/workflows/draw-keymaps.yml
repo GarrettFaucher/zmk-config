@@ -13,4 +13,4 @@ jobs:
       config_path: "assets/keymap-drawer/config.yaml"  # config file, ignored if not exists
       output_folder: "assets/keymap-drawer"            # path to save produced SVG and keymap YAML files
       parse_args: ""  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
-      draw_args: "soflew:'-k sofle' sofle:'-k sofle'"   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+      draw_args: ""   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
