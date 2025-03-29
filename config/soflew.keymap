@@ -1,3 +1,5 @@
+#include <layouts/josefadamcik/sofle.dtsi>
+
 #include "keypos_def/keypos_sofle_keys.h"
 #include "includes/4x6.dtsi"
 
