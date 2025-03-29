@@ -5,12 +5,17 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <layouts/josefadamcik/sofle.dtsi>
+
+&josefadamcik_sofle_layout {
+    transform = <&default_transform>;
+    kscan = <&kscan0>;
+};
 
 / {
     chosen {
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
     };
 
     default_transform: keymap_transform_0 {
@@ -33,7 +38,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
+        wakeup-source;
 
         diode-direction = "col2row";
         row-gpios
@@ -43,7 +48,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
             , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
-            wakeup-source;
     };
 
     left_encoder: encoder_left {

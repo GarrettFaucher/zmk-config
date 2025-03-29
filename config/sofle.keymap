@@ -1,1 +1,11 @@
-#import "soflew.keymap"
+#include "keypos_def/keypos_sofle_keys.h"
+#include "includes/4x6.dtsi"
+
+&left_encoder { steps = <80>; };
+&right_encoder { steps = <80>; };
+
+/ {
+    chosen {
+        zmk,physical-layout = &josefadamcik_sofle_layout;
+    };
+};
