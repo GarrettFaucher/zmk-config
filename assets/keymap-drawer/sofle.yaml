@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: sofle, layout_name: josefadamcik_sofle_layout}
+layout: {zmk_keyboard: sofle}
 layers:
   Base:
   - ESCAPE
