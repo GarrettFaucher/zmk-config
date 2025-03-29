@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne, layout_name: foostan_corne_6col_layout}
 layers:
   Base:
-  - TAB
+  - ↹
   - Q
   - W
   - E
@@ -12,41 +12,39 @@ layers:
   - I
   - O
   - P
-  - DEL
-  - LCTRL
-  - {t: A, h: LGUI}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTRL}
+  - ⌦
+  - Ctrl
+  - {t: A, h: Gui}
+  - {t: S, h: Alt}
+  - {t: D, h: Ctrl}
   - {t: F, h: LEFT SHIFT}
   - G
   - H
   - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
+  - {t: K, h: Ctrl}
+  - {t: L, h: Alt}
+  - {t: ;, h: Gui}
   - ''''
-  - LSHFT
+  - Shift
   - Z
   - X
   - C
   - V
   - B
-  - {t: Game, h: toggle}
-  - MUTE
   - N
   - M
   - ','
   - .
   - /
-  - RSHFT
+  - Shift
   - {t: LEFT GUI, h: Number}
-  - {t: SPACE, h: Navigation}
-  - {t: TAB, h: Macro}
+  - {t: ␣, h: Navigation}
+  - {t: ↹, h: Macro}
   - {t: ENTER, h: Symbol}
   - {t: BACKSPACE, h: Navigation}
-  - {t: DEL, h: Function}
+  - {t: ⌦, h: Function}
   Game:
-  - TAB
+  - ↹
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -58,7 +56,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - HOME
+  - Home
   - A
   - S
   - D
@@ -76,8 +74,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Game, h: toggle}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -85,8 +81,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Function
-  - SPACE
-  - LCTRL
+  - ␣
+  - Ctrl
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -108,12 +104,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&caps_word'
-  - '&caps_word'
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - Caps Word
+  - Caps Word
+  - ←
+  - ↓
+  - ↑
+  - →
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -122,12 +118,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - HOME
-  - PG DN
-  - PG UP
-  - END
+  - Home
+  - Page Down
+  - Page Up
+  - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -154,8 +148,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Alt+Ctl+G
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -211,8 +203,6 @@ layers:
   - '*'
   - \
   - _
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '~'
   - $
   - '{'
@@ -256,8 +246,6 @@ layers:
   - '3'
   - ENTER
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ENTER
   - '1'
   - '2'
@@ -300,8 +288,6 @@ layers:
   - F10
   - F11
   - F12
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F9
