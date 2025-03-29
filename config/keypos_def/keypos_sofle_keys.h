@@ -109,6 +109,10 @@
           #define RH3 58
           #define RH4 59
 
+          #define KEYS_L LN0 LN1 LN2 LN3 LN4 LN5 LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5  // left-hand keys
+          #define KEYS_R RN0 RN1 RN2 RN3 RN4 RN5 RT0 RT1 RT2 RT3 RT4 RT5 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RB5  // right-hand keys
+          #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                                                          // thumb keys
+
           #define LAYER_FROM60( \
             k00, k01, k02, k03, k04, k05,           k06, k07, k08, k09, k10, k11, \
             k12, k13, k14, k15, k16, k17,           k18, k19, k20, k21, k22, k23, \
