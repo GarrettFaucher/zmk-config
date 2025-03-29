@@ -2,21 +2,38 @@
 include:
   - board: nice_nano_v2
     shield: settings_reset
+
+  # ---- Sofle ----
   - board: nice_nano_v2
     shield: soflew_dongle dongle_display_091_oled
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: sofle_dongle
+
   - board: nice_nano_v2
     shield: soflew_left nice_view_adapter nice_view
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    artifact-name: sofle_central_left
+
+  - board: nice_nano_v2
+    shield: soflew_left nice_view_adapter nice_view
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: sofle_peripheral_left
+
   - board: nice_nano_v2
     shield: soflew_right nice_view_adapter nice_view
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: sofle_peripheral_right
+
+  # ---- Corne ----
   - board: nice_nano_v2
     shield: corne_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    artifact-name: corne_central_left
+
   - board: nice_nano_v2
     shield: corne_right
-  # - board: nice_nano_v2
-  #   shield: sofle_left nice_view_adapter nice_view
-  # - board: nice_nano_v2
-  #   shield: sofle_right nice_view_adapter nice_view
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: corne_peripheral_right
