@@ -37,7 +37,7 @@ layers:
   - .
   - /
   - Shift
-  - {t: LEFT GUI, h: Number}
+  - {t: ESCAPE, h: Number}
   - {t: ␣, h: Navigation}
   - {t: ↹, h: Macro}
   - {t: ENTER, h: Symbol}
