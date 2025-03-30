@@ -1,6 +1,6 @@
 file_format: "1"
-id: soflew
-name: SofleW
+id: sofle
+name: Sofle
 type: shield
 url: https://github.com/josefadamcik/SofleKeyboard
 requires: [pro_micro]
@@ -10,6 +10,6 @@ features:
   - display
   - encoder
 siblings:
-  - soflew_left
-  - soflew_right
-  - soflew_dongle
+  - sofle_left
+  - sofle_right
+  - sofle_dongle

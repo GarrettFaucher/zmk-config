@@ -4,11 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "soflew.dtsi"
-
-&default_transform {
-    col-offset = <6>;
-};
+#include "sofle.dtsi"
 
 &kscan0 {
     col-gpios
@@ -21,6 +17,8 @@
         ;
 };
 
-&right_encoder {
-    status = "okay";
+/ {
+    chosen {
+        zephyr,display = &oled;
+    };
 };
