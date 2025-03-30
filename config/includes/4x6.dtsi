@@ -53,7 +53,7 @@
 &kp ESCAPE,  &trans,  &trans,  &trans,  &trans,    &trans,                        &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
 &kp TAB,     &trans,  &trans,  &trans,  &trans,    &trans,                        &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
 &kp HOME,    &kp A,   &kp S,   &kp D,   &kp F,     &trans,                        &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
-&trans,      &trans,  &trans,  &trans,  &trans,    &trans,     &tog GAME,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,      &trans,  &trans,  &trans,  &trans,    &trans,   &tog GAME,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
                     &trans,  &trans,  &mo FUNC,  &kp SPACE,  &kp LCTRL,  &trans,  &trans,  &trans,  &trans,  &trans
             )>;
         };
@@ -61,11 +61,11 @@
         nav {
             label = "Navigation";
             bindings = < LAYER_FROM60( \
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                      &trans,      &kp F13,     &kp F14,           &trans,            &trans,      &trans,
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                      &trans,      &kp K_PREV,  &kp K_PLAY_PAUSE,  &kp K_PLAY_PAUSE,  &kp K_NEXT,  &trans,
-&trans,  &trans,  &trans,  &trans,  &trans,  &caps_word,                  &caps_word,  &kp LEFT,    &kp DOWN,          &kp UP,            &kp RIGHT,   &trans,
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,      &trans,  &trans,  &trans,      &kp HOME,    &kp PG_DN,         &kp PG_UP,         &kp END,     &trans,
-                &trans,  &trans,  &trans,  &trans,      &trans,  &trans,  &trans,      &trans,      &trans,            &trans
+&trans,  &bt BT_SEL 0,  &bt BT_SEL 1,   &bt BT_SEL 2,  &bt BT_SEL 3,  &bt BT_CLR,                                                     &trans,      &kp F13,     &kp F14,           &trans,            &trans,      &trans,
+&trans,  &trans,        &trans,         &trans,        &trans,        &trans,                                                         &trans,      &kp K_PREV,  &kp K_PLAY_PAUSE,  &kp K_PLAY_PAUSE,  &kp K_NEXT,  &trans,
+&trans,  &trans,        &trans,         &trans,        &trans,        &caps_word,                                                     &caps_word,  &kp LEFT,    &kp DOWN,          &kp UP,            &kp RIGHT,   &trans,
+&trans,  &trans,        &trans,         &trans,        &trans,        &trans,      &trans,                                   &trans,  &trans,      &kp HOME,    &kp PG_DN,         &kp PG_UP,         &kp END,     &trans,
+                        &trans,         &trans,        &trans,        &trans,      &trans,                                   &trans,  &trans,      &trans,      &trans,            &trans
             )>;
         };
 
