@@ -2,4 +2,7 @@
 
 https://github.com/zmkfirmware/zmk/tree/main/app/boards/shields/nice_view
 
-Changes made are custom art
+## Changes
+
+* Made are custom art of three cats
+* Removed balloon and mountain default art
