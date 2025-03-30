@@ -124,11 +124,11 @@ layers:
   - {t: ▽, type: trans}
   Navigation:
   - {t: ▽, type: trans}
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F13
   - F14
@@ -136,11 +136,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT CLR
   - {t: ▽, type: trans}
   - PREV
   - PLAY PAUSE
