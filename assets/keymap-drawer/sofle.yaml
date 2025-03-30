@@ -53,7 +53,7 @@ layers:
   - Shift
   - Ctrl
   - Alt
-  - {t: LEFT GUI, h: Number}
+  - {t: ESCAPE, h: Number}
   - {t: ␣, h: Navigation}
   - {t: ↹, h: Macro}
   - {t: ENTER, h: Symbol}
@@ -124,11 +124,11 @@ layers:
   - {t: ▽, type: trans}
   Navigation:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT CLR
   - {t: ▽, type: trans}
   - F13
   - F14
