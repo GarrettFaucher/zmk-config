@@ -1,8 +1,8 @@
 file_format: "1"
-id: nice_view
-name: nice!view
+id: custom_nice_view
+name: custom_nice!view
 type: shield
 url: https://nicekeyboards.com/nice-view
-requires: [nice_view_header]
+requires: [custom_nice_view_header]
 features:
   - display
