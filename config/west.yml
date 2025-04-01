@@ -12,5 +12,11 @@ manifest:
     - name: zmk-dongle-display-091-oled
       remote: garrettfaucher
       revision: mulitple-peripheral-count
+    - name: zmk-keyboards-soflew
+      remote: garrettfaucher
+      revision: main
+    - name: zmk-nice-view-custom-art
+      remote: garrettfaucher
+      revision: main
   self:
     path: config
