@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-dongle-display-091-oled
       remote: garrettfaucher
-      revision: mulitple-peripheral-count
+      revision: static-periph-count
   self:
     path: config
