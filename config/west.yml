@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: garrettfaucher
       url-base: https://github.com/garrettfaucher
+    - name: kumamuk-git
+      url-base: https://github.com/kumamuk-git
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,5 +14,8 @@ manifest:
     - name: zmk-dongle-display-091-oled
       remote: garrettfaucher
       revision: mulitple-peripheral-count
+    - name: zmk-pmw3610-driver
+      remote: kumamuk-git
+      revision: main
   self:
     path: config

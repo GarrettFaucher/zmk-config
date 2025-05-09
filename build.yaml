@@ -37,3 +37,12 @@ include:
     shield: corne_right
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: corne_peripheral_right
+
+
+  # ---- Keyball61 ----
+  - board: nice_nano_v2
+    shield: keyball61_right
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    snippet: studio-rpc-usb-uart
+  # - board: nice_nano_v2
+  #   shield: keyball61_left
