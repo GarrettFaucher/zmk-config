@@ -45,5 +45,3 @@ choice LV_COLOR_DEPTH
 endchoice
 
 endif 
-
-CONFIG_KSCAN=y
