@@ -2,4 +2,4 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "keypos_def/keypos_61_keys.h"
-#include "includes/4x6.dtsi"
+#include "includes/5x6.dtsi"
