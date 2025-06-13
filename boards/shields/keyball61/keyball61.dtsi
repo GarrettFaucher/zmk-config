@@ -5,7 +5,7 @@
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
-#include <input/processors/xyz.dtsi>
+//#include <input/processors/xyz.dtsi>
 
 &physical_layout0 {
     kscan = <&kscan0>; // Label of the kscan this layout uses
