@@ -41,7 +41,6 @@
 		// pmw3360 driver parameters
 		cpi = <600>;
 		rotate-90;
-        invert-y;
 	};
 };
 
@@ -50,5 +49,10 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&mouse>;
+        input-processors = <&zip_xy_transform 1 -1>;
+        scroller {
+            layers = <1>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
     };
 };
