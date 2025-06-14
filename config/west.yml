@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: garrettfaucher
       url-base: https://github.com/garrettfaucher
-    - name: george-norton
-      url-base: https://github.com/george-norton
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -15,7 +13,7 @@ manifest:
       remote: garrettfaucher
       revision: mulitple-peripheral-count
     - name: zmk-driver-pmw3360
-      remote: george-norton
-      revision: main
+      remote: garrettfaucher
+      revision: invert-x-y
   self:
     path: config
