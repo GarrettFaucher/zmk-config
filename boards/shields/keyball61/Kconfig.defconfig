@@ -1,0 +1,26 @@
+if SHIELD_KEYBALL61_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "Keyball61"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_KEYBALL61_RIGHT
+
+config SPI
+    default y
+
+endif
+
+if SHIELD_KEYBALL61_LEFT || SHIELD_KEYBALL61_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_POINTING
+    default y
+
+endif

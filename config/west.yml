@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: garrettfaucher
       url-base: https://github.com/garrettfaucher
+    - name: george-norton
+      url-base: https://github.com/george-norton
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -12,5 +14,8 @@ manifest:
     - name: zmk-dongle-display-091-oled
       remote: garrettfaucher
       revision: mulitple-peripheral-count
+    - name: zmk-driver-pmw3360
+      remote: george-norton
+      revision: main
   self:
     path: config

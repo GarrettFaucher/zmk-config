@@ -1,5 +1,5 @@
 #include "keypos_def/keypos_sofle_keys.h"
-#include "includes/4x6.dtsi"
+#include "includes/5x6.dtsi"
 
 &left_encoder { steps = <80>; };
 &right_encoder { steps = <80>; };

@@ -1,0 +1,53 @@
+#include "keyball61.dtsi"
+
+&default_transform {
+    col-offset = <9>;
+    row-offset = <9>;
+};
+
+&pinctrl {
+    spi0_default: spi0_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK,  1, 13)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 10)>,
+                    <NRF_PSEL(SPIM_MISO, 1, 11)>;
+        };
+    };
+
+    spi0_sleep: spi0_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK,  1, 13)>,
+                    <NRF_PSEL(SPIM_MOSI, 0, 10)>,
+                    <NRF_PSEL(SPIM_MISO, 1, 11)>;
+            low-power-enable;
+        };
+    };
+};
+
+
+&spi0 {
+    status = "okay";
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi0_default>;
+    pinctrl-1 = <&spi0_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
+	mouse: mouse@0 {
+		compatible = "pixart,pmw3360";
+		status = "okay";
+		reg = <0>;
+		spi-max-frequency = <2000000>;
+
+		// pmw3360 driver parameters
+		cpi = <600>;
+		rotate-90;
+	};
+};
+
+/ {
+    mouse_listener {
+        status = "okay";
+        compatible = "zmk,input-listener";
+        device = <&mouse>;
+    };
+};
