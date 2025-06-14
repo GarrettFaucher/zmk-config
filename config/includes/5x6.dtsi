@@ -12,6 +12,7 @@
 #define SYMBOL 4
 #define NUM 5
 #define FUNC 6
+#define MOUSE 7
 
 / {
     behaviors {
@@ -110,6 +111,17 @@
 &trans,    &kp F5,  &kp F6,   &kp F7,   &kp F8,   &trans,                    &trans,  &kp F5,  &kp F6,   &kp F7,   &kp F8,   &trans,
 &trans,    &kp F9,  &kp F10,  &kp F11,  &kp F12,  &trans,  &trans,  &trans,  &trans,  &kp F9,  &kp F10,  &kp F11,  &kp F12,  &trans,
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,  &trans,  &trans,  &trans,  &trans,  &trans,   &trans,   &trans,   &trans
+            )>;
+        };
+
+        mouse {
+            label = "Mouse";
+            bindings = < LAYER_FROM64( \
+&trans,    &trans,  &trans,   &trans,   &trans,   &trans,                    &trans,  &trans,   &trans,   &trans,   &trans,   &trans,
+&trans,    &trans,  &trans,   &trans,   &trans,   &trans,                    &trans,  &trans,   &trans,   &trans,   &trans,   &trans,
+&trans,    &trans,  &trans,   &trans,   &trans,   &trans,                    &trans,  &mkp MB1, &mkp MB3, &mkp MB2,   &trans,   &trans,
+&trans,    &trans,  &trans,   &trans,   &trans,   &trans,  &trans,  &trans,  &trans,  &trans,   &trans,   &trans,   &trans,   &trans,
+&trans,    &trans,  &trans,   &trans,   &trans,   &trans,  &trans,  &trans,  &trans,  &trans,   &trans,   &trans,   &trans,   &trans
             )>;
         };
     };
