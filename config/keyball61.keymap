@@ -1,5 +1,2 @@
-#include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/bt.h>
-
 #include "keypos_def/keypos_61_keys.h"
 #include "includes/5x6.dtsi"
