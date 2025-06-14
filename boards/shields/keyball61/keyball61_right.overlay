@@ -41,7 +41,7 @@
 		// pmw3360 driver parameters
 		cpi = <600>;
 		rotate-90;
-        y-invert;
+        invert-y;
 	};
 };
 
