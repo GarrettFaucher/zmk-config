@@ -84,7 +84,7 @@
     pinctrl-1 = <&i2c1_sleep>;
     pinctrl-names = "default", "sleep";
 
-    oled : ssd1306@3c {
+    oled: ssd1306@3c {
 		compatible = "solomon,ssd1306fb-i2c";
 		reg = <0x3c>;
 		label = "DISPLAY";
