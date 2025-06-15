@@ -84,20 +84,16 @@
     pinctrl-1 = <&i2c1_sleep>;
     pinctrl-names = "default", "sleep";
 
-    oled: ssd1306@3c {
-        compatible = "solomon,ssd1306fb-i2c";
-        reg = <0x3c>;
-        width = <128>;
-        height = <32>;
-        segment-offset = <0>;
-        page-offset    = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <31>;
-        segment-remap;
-        com-invdir;
-        com-sequential;
-        inversion-on;
-        prechargep = <0x22>;
-        /* optional reset: reset-gpios = <&gpio0 28 GPIO_ACTIVE_LOW>; */
-    };
+    oled : ssd1306@3c {
+		compatible = "solomon,ssd1306fb-i2c";
+		reg = <0x3c>;
+		label = "DISPLAY";
+		width = <128> ;
+		height = <32> ;
+		segment-offset = <0> ;
+		page-offset = <0> ;
+		display-offset = <0> ;
+		display-inverted = <0> ;
+		// reset-gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
+	};
 };
