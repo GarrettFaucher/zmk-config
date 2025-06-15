@@ -83,6 +83,7 @@
     pinctrl-0 = <&i2c1_default>;
     pinctrl-1 = <&i2c1_sleep>;
     pinctrl-names = "default", "sleep";
+    zephyr,concat-buf-size = <2048>; 
 
     oled: ssd1306@3c {
 		compatible = "solomon,ssd1306fb-i2c";
