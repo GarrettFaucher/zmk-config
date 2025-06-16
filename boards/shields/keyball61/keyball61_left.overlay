@@ -1,5 +1,1 @@
 #include "keyball61.dtsi"
-
-// &trackball_listener {
-//     status = "okay";
-// };
