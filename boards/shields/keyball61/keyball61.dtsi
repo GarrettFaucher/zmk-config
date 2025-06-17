@@ -5,26 +5,11 @@
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <input/processors.dtsi>
-//#include <input/processors/xyz.dtsi>
-
-&physical_layout0 {
-    kscan = <&kscan0>; // Label of the kscan this layout uses
-    transform = <&default_transform>; // Label of the matrix transform this layout uses
-};
 
 / {
-
-    to_wheel: to_wheel {
-        compatible = "zmk,input-processor-code-mapper";
-        #input-processor-cells = <0>;
-        type = <INPUT_EV_REL>;
-        map = <INPUT_REL_X INPUT_REL_HWHEEL>
-            , <INPUT_REL_Y INPUT_REL_WHEEL>;
-    };
-
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &keyball61_physical_layout;
         zephyr,display = &oled;
     };
 
