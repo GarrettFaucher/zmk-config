@@ -16,6 +16,8 @@
 #define FUNC 6
 #define MOUSE 7
 
+#include "combos.dtsi"
+
 / {
     behaviors {
         hrm: hrm {
