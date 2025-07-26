@@ -21,7 +21,7 @@
     combos {
         compatible = "zmk,combos";
 
-    COMBO(alttab, &kp LA(TAB), LB0 LB1, BASE GAME, 80, 50)
+    COMBO(ctrlalttab, &kp LA(LC(TAB)), LB0 LB1, BASE GAME, 80, 50)
     
     };
 };
