@@ -24,20 +24,14 @@
  * SOFTWARE.
  */
 
-/*                              43 KEY MATRIX / LAYOUT MAPPING
+/*                                     43 KEY MATRIX / LAYOUT MAPPING
 
-  ╭────────────────────────┬────────────────────────╮
-  │  0   1   2   3   4     │      5   6   7   8   9 │
-  │ 10  11  12  13  14  15 │ 16  17  18  19  20  21 │
-  │ 22  23  24  25  26  27 │ 28  29  30  31  32  33 │
-  │ 34  35  36  37  38  39 │ 40  41              42 │
-  ╰────────────────────────┴────────────────────────╯
-  ╭─────────────────────────┬─────────────────────────╮
-  │ LT4 LT3 LT2 LT1 LT0     │     RT0 RT1 RT2 RT3 RT4 │
-  │ LM4 LM3 LM2 LM1 LM0 LM5 │ RM5 RM0 RM1 RM2 RM3 RM4 │
-  │ LB4 LB3 LB2 LB1 LB0 LSN │ RSN RB0 RB1 RB2 RB3 RB4 │
-  | LH5 LH4 LH3 LH2 LH1 LH0 │ RH0 RH1             RH2 |
-  ╰─────────────────────────┴─────────────────────────╯  */
+  ╭────────────────────────┬────────────────────────╮  ╭─────────────────────────┬─────────────────────────╮
+  │  0   1   2   3   4     │      5   6   7   8   9 │  │ LT4 LT3 LT2 LT1 LT0     │     RT0 RT1 RT2 RT3 RT4 │
+  │ 10  11  12  13  14  15 │ 16  17  18  19  20  21 │  │ LM4 LM3 LM2 LM1 LM0 LMN │ RMN RM0 RM1 RM2 RM3 RM4 │
+  │ 22  23  24  25  26  27 │ 28  29  30  31  32  33 │  │ LB4 LB3 LB2 LB1 LB0 LSN │ RSN RB0 RB1 RB2 RB3 RB4 │
+  │ 34  35  36  37  38  39 │ 40  41              42 │  │ LH5 LH4 LH3 LH2 LH1 LH0 │ RH0 RH1             RH2 │
+  ╰────────────────────────┴────────────────────────╯  ╰─────────────────────────┴─────────────────────────╯  */
 
 #pragma once
 
@@ -53,19 +47,19 @@
 #define RT3 8
 #define RT4 9
 
-#define LM0 14  // left-middle row
+#define LMN 15  // left-middle row
+#define LM0 14
 #define LM1 13
 #define LM2 12
 #define LM3 11
 #define LM4 10
-#define LM5 15
 
-#define RM0 17  // right-middle row
+#define RMN 16  // right-middle row
+#define RM0 17
 #define RM1 18
 #define RM2 19
 #define RM3 20
 #define RM4 21
-#define RM5 16
 
 #define LB0 26  // left-bottom row
 #define LB1 25
@@ -93,9 +87,9 @@
 #define RH1 41
 #define RH2 42
 
-#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LH3 LH4 LH5 // left-hand keys
-#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RM5 RB0 RB1 RB2 RB3 RB4 RH2         // right-hand keys
-#define THUMBS LH2 LH1 LH0 RH0 RH1                                                         // thumb keys
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LMN LB0 LB1 LB2 LB3 LB4 LSN LH3 LH4 LH5 // left-hand keys
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RMN RB0 RB1 RB2 RB3 RB4 RSN RH2         // right-hand keys
+#define THUMBS LH2 LH1 LH0 RH0 RH1                                                             // thumb keys
 
 #define LAYER_FROM64( \
     k00, k01, k02, k03, k04, k05,           k06, k07, k08, k09, k10, k11, \
