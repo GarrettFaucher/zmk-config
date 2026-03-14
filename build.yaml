@@ -2,6 +2,8 @@
 include:
   - board: nice_nano_v2
     shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
 
   # ---- Sofle ----
   - board: nice_nano_v2
@@ -47,3 +49,11 @@ include:
     shield: keyball61_right
     artifact-name: keyball_right
 
+  # ---- roBa ----
+  - board: seeeduino_xiao_ble
+    shield: roBa_R
+    artifact-name: roBa_right
+    snippet: studio-rpc-usb-uart
+  - board: seeeduino_xiao_ble
+    shield: roBa_L
+    artifact-name: roBa_left
