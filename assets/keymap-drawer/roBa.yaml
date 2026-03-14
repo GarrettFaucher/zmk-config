@@ -1,7 +1,6 @@
-layout: {zmk_keyboard: corne, layout_name: foostan_corne_6col_layout}
+layout: {zmk_keyboard: roBa}
 layers:
   Base:
-  - ↹
   - Q
   - W
   - E
@@ -12,31 +11,33 @@ layers:
   - I
   - O
   - P
-  - ⌦
-  - Ctrl
   - {t: A, h: Gui}
   - {t: S, h: Alt}
   - {t: D, h: Ctrl}
   - {t: F, h: LEFT SHIFT}
   - G
+  - Ctrl
+  - ''''
   - H
   - {t: J, h: RIGHT SHIFT}
   - {t: K, h: Ctrl}
   - {t: L, h: Alt}
   - {t: ;, h: Gui}
-  - ''''
-  - Shift
   - Z
   - X
   - C
   - V
   - B
+  - {t: Game, h: toggle}
+  - MUTE
   - N
   - M
   - ','
   - .
   - /
-  - Shift
+  - Alt
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ESCAPE, h: Number}
   - {t: ␣, h: Mouse}
   - {t: ↹, h: Macro}
@@ -44,7 +45,6 @@ layers:
   - {t: BACKSPACE, h: Navigation}
   - {t: ⌦, h: Function}
   Game:
-  - ↹
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -55,13 +55,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Home
   - A
   - S
   - D
   - F
   - {t: ▽, type: trans}
+  - Home
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -71,6 +70,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Game, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,7 +89,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Navigation:
-  - {t: ▽, type: trans}
   - BT 1
   - BT 2
   - BT 3
@@ -102,9 +103,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Caps Word
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Caps Word
   - ←
   - ↓
@@ -127,6 +128,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   Macro:
@@ -136,10 +139,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '&studio_unlock'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -168,12 +168,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Symbol:
-  - {t: ▽, type: trans}
   - ''''
   - <
   - '>'
@@ -184,25 +187,25 @@ layers:
   - '['
   - ']'
   - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - '!'
   - '-'
   - +
   - '='
   - '#'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '|'
   - ':'
   - (
   - )
   - '?'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ^
   - /
   - '*'
   - \
   - _
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '~'
   - $
   - '{'
@@ -212,11 +215,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Number:
-  - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
@@ -227,18 +231,24 @@ layers:
   - '8'
   - '9'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '0'
   - '4'
   - '5'
   - '6'
   - '0'
   - {t: ▽, type: trans}
   - '0'
+  - {t: ▽, type: trans}
+  - '0'
   - '4'
   - '5'
   - '6'
   - '0'
+  - '1'
+  - '2'
+  - '3'
+  - ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
   - '1'
@@ -246,11 +256,7 @@ layers:
   - '3'
   - ENTER
   - {t: ▽, type: trans}
-  - ENTER
-  - '1'
-  - '2'
-  - '3'
-  - ENTER
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -259,7 +265,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   Function:
-  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
@@ -270,18 +275,24 @@ layers:
   - F2
   - F3
   - F4
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - F5
   - F6
   - F7
   - F8
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F5
   - F6
   - F7
   - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F9
@@ -290,10 +301,6 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F9
-  - F10
-  - F11
-  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -302,7 +309,6 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   Mouse:
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -339,12 +345,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [29, 28]
+- p: [26, 25]
   k: Alt+Ctl+↹
   l: [Base, Game]

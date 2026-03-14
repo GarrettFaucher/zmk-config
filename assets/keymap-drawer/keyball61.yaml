@@ -496,3 +496,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+combos:
+- p: [41, 40]
+  k: Alt+Ctl+↹
+  l: [Base, Game]

@@ -6,3 +6,6 @@ Edited using https://nickcoutsos.github.io/keymap-editor/
 
 ## Corne
 ![Keymap](assets/keymap-drawer/corne.svg)
+
+## roBa
+![Keymap](assets/keymap-drawer/roBa.svg)
