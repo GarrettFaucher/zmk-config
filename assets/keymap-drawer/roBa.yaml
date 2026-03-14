@@ -35,9 +35,9 @@ layers:
   - ','
   - .
   - /
+  - Ctrl
   - Alt
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ⌦, h: Function}
   - {t: Esc, h: Number}
   - {t: ␣, h: Mouse}
   - {t: ↹, h: Macro}
@@ -301,13 +301,13 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
