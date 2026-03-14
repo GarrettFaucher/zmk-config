@@ -3,31 +3,34 @@ parse_config:
   raw_binding_map:
     '&sys_reset': Reset
     '&bootloader': Boot
-    '&swapper': Win Next
     '&caps_word': Caps Word
-    '&inv_qm': ¿
-    '&ind_bat': Show Batt
-    '&ind_con': Show Conn
+    '&studio_unlock': Studio
 
-    '&kp LC(TAB)': Tab Right
-    '&kp LC(LS(TAB))': Tab Left
-    '&kp LA(F4)': Win Close
-    '&kp LC(F4)': Tab Close
-    '&kp LS(TAB)': Win Prev
-    '&kp LS(INS)': Paste
-    '&kp LC(C)': Copy
-    '&kp LC(X)': Cut
-    '&kp LC(Z)': Undo
-    '&kp LG(L)': Lock
-
+    '&out OUT_TOG': Out Toggle
     '&out OUT_USB': Out USB
     '&out OUT_BLE': Out BLE
+    '&ext_power EP_TOG': Pwr Toggle
 
     '&bt BT_SEL 0': BT 1
     '&bt BT_SEL 1': BT 2
     '&bt BT_SEL 2': BT 3
     '&bt BT_SEL 3': BT 4
-    '&bt BT_SEL 4': BT 5
+    '&bt BT_CLR': BT Clear
+
+    '&tog GAME': Toggle Game
+
+    '&kp LC(LS(ESCAPE))': Task Mgr
+    '&kp LS(LG(S))': Screenshot
+    '&kp LA(LC(G))': Alt+Ctrl+G
+    '&kp LC(Y)': Redo
+    '&kp LC(Z)': Undo
+
+    '&mkp MB1': Left Click
+    '&mkp MB2': Right Click
+    '&mkp MB3': Middle Click
+    '&mkp LCLK': Left Click
+    '&mkp RCLK': Right Click
+    '&mkp MCLK': Middle Click
 
     '&mmv MOVE_UP': Mouse ↑
     '&mmv MOVE_DOWN': Mouse ↓
@@ -39,33 +42,10 @@ parse_config:
     '&msc SCRL_LEFT': Scroll ←
     '&msc SCRL_RIGHT': Scroll →
 
-    '&mkp LCLK': Left Click
-    '&mkp RCLK': Right Click
-    '&mkp MCLK': Middle Click
-    '&mkp MB4': Back Click
-    '&mkp MB5': Forward Click
-
   zmk_combos:
-    combo_btclr:  {align: bottom}
-    combo_undo:   {align: bottom}
-    combo_mouse:  {align: bottom}
-    combo_play:   {align: right}
-    combo_calc:   {align: left}
-    combo_capswd: {draw_separate: true}
-    combo_lpar:   {draw_separate: true}
-    combo_rpar:   {draw_separate: true}
-    combo_esc:    {draw_separate: true}
-    combo_ret:    {draw_separate: true}
-    combo_lock:   {draw_separate: true}
-    combo_indbat: {align: top, o: 0.25}
-    combo_indcon: {align: top}
+    combo_ctrlalttab: {align: bottom}
 
   zmk_keycode_map:
-    # custom mappings
-    C_VOL_UP: Vol Up
-    C_VOL_DN: Vol Down
-    C_AL_CALC: Calc
-
     LCTRL: Ctrl
     RCTRL: Ctrl
     LALT: Alt
@@ -74,32 +54,42 @@ parse_config:
     RGUI: Gui
     LSHFT: Shift
     RSHFT: Shift
+    LEFT_SHIFT: Shift
+    RIGHT_SHIFT: Shift
     ESC: Esc
+    ESCAPE: Esc
     SPACE: ␣
     BSPC: ⌫
+    BACKSPACE: ⌫
     RET: ⏎
+    ENTER: ⏎
     TAB: ↹
     DEL: ⌦
-
-    PG_UP: Page Up
-    PG_DN: Page Down
-    INS: Insert
-    HOME: Home
-    END: End
-    CAPS: Caps Lock
-    PSCRN: Print Scrn
-    PAUSE_BREAK: Pause Break
 
     UP: ↑
     DOWN: ↓
     LEFT: ←
     RIGHT: →
 
-    C_PP: ⏯
-    C_NEXT: ⏭️
-    C_PREV: ⏮️
+    PG_UP: Page ↑
+    PG_DN: Page ↓
+    INS: Insert
+    HOME: Home
+    END: End
+    CAPS: Caps Lock
+    PSCRN: Print Scrn
 
-    # defaults
+    C_MUTE: Mute
+    C_VOL_UP: Vol ↑
+    C_VOLUME_UP: Vol ↑
+    C_VOL_DN: Vol ↓
+    K_PLAY_PAUSE: ⏯
+    C_PP: ⏯
+    K_NEXT: ⏭
+    C_NEXT: ⏭
+    K_PREV: ⏮
+    C_PREV: ⏮
+
     AMPERSAND: '&'
     AMPS: '&'
     APOS: "'"
@@ -164,6 +154,7 @@ parse_config:
     TILDE2: '~'
     UNDER: _
     UNDERSCORE: _
+
 draw_config:
   footer_text: 'Created with <a href="https://github.com/caksoylar/keymap-drawer">keymap-drawer</a>'
   dark_mode: auto
