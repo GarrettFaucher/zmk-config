@@ -14,12 +14,12 @@ layers:
   - {t: A, h: Gui}
   - {t: S, h: Alt}
   - {t: D, h: Ctrl}
-  - {t: F, h: LEFT SHIFT}
+  - {t: F, h: Shift}
   - G
   - Ctrl
   - ''''
   - H
-  - {t: J, h: RIGHT SHIFT}
+  - {t: J, h: Shift}
   - {t: K, h: Ctrl}
   - {t: L, h: Alt}
   - {t: ;, h: Gui}
@@ -28,21 +28,21 @@ layers:
   - C
   - V
   - B
-  - {t: Game, h: toggle}
-  - MUTE
+  - Toggle Game
+  - Mute
   - N
   - M
   - ','
   - .
   - /
+  - Ctrl
   - Alt
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ESCAPE, h: Number}
+  - {t: ⌦, h: Function}
+  - {t: Esc, h: Number}
   - {t: ␣, h: Mouse}
   - {t: ↹, h: Macro}
-  - {t: ENTER, h: Symbol}
-  - {t: BACKSPACE, h: Navigation}
+  - {t: ⏎, h: Symbol}
+  - {t: ⌫, h: Navigation}
   - {t: ⌦, h: Function}
   Game:
   - {t: ▽, type: trans}
@@ -72,7 +72,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: Game, h: toggle}
+  - Toggle Game
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -93,12 +93,12 @@ layers:
   - BT 2
   - BT 3
   - BT 4
-  - BT CLR
-  - OUT TOG
-  - PREV
-  - PLAY PAUSE
-  - PLAY PAUSE
-  - NEXT
+  - BT Clear
+  - Out Toggle
+  - ⏮
+  - ⏯
+  - ⏯
+  - ⏭
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -120,8 +120,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Home
-  - Page Down
-  - Page Up
+  - Page ↓
+  - Page ↑
   - End
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -139,15 +139,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&studio_unlock'
+  - Studio
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Sft+ESCAPE
-  - Sft+Gui+S
+  - Task Mgr
+  - Screenshot
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Alt+Ctl+G
+  - Alt+Ctrl+G
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -246,15 +246,15 @@ layers:
   - '1'
   - '2'
   - '3'
-  - ENTER
+  - ⏎
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ENTER
+  - ⏎
   - '1'
   - '2'
   - '3'
-  - ENTER
+  - ⏎
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -301,19 +301,19 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - OUT TOG
+  - Out Toggle
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -327,9 +327,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
+  - Left Click
+  - Middle Click
+  - Right Click
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -356,3 +356,4 @@ combos:
 - p: [26, 25]
   k: Alt+Ctl+↹
   l: [Base, Game]
+  a: bottom
