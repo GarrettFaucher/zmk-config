@@ -14,11 +14,27 @@
 #define NUM 5
 #define FUNC 6
 #define MOUSE 7
+#define GUI_NAV 8
 
 #include "combos.dtsi"
 
 / {
     behaviors {
+        gui_nav_enter: gui_nav_enter {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>,
+                       <&macro_tap &kp TAB>,
+                       <&macro_tap &to GUI_NAV>;
+        };
+
+        gui_nav_exit: gui_nav_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp LGUI>,
+                       <&macro_tap &to BASE>;
+        };
+
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -122,6 +138,17 @@
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,                    &trans,  &mkp MB1, &mkp MB3, &mkp MB2,   &trans,   &trans,
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,  &trans,  &trans,  &trans,  &trans,   &trans,   &trans,   &trans,   &trans,
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,  &trans,  &trans,  &trans,  &trans,   &trans,   &trans,   &trans,   &trans
+            )>;
+        };
+
+        gui_nav {
+            display-name = "GUI Nav";
+            bindings = < LAYER_FROM64( \
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                    &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                    &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                    &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans
             )>;
         };
     };
