@@ -43,8 +43,8 @@ layers:
   - C
   - V
   - B
-  - Toggle Game
   - Mute
+  - Toggle Game
   - N
   - M
   - ','
