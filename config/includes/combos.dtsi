@@ -21,7 +21,8 @@
     combos {
         compatible = "zmk,combos";
 
-    COMBO(toggle_gui, &toggle_gui, LB0 LB1, BASE GAME, 80, 50)
+// COMBO(ctrlalttab, &kp LA(LC(TAB)), 	LB0 LB1, BASE GAME, 80, 50)
+   COMBO(toggle_gui, &kt LGUI, 		LB0 LB1, BASE GAME, 80, 50)
     
     };
 };
