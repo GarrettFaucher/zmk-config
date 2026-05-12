@@ -44,6 +44,7 @@ parse_config:
 
   zmk_combos:
     combo_ctrlalttab: {align: bottom}
+    combo_gui_nav_enter: {align: bottom}
 
   zmk_keycode_map:
     LCTRL: Ctrl
