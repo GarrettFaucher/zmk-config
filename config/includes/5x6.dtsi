@@ -14,18 +14,30 @@
 #define NUM 5
 #define FUNC 6
 #define MOUSE 7
+#define GUI_NAV 8
 
 #include "combos.dtsi"
 
 / {
     behaviors {
-        // LB0+LB1: hold GUI and tap Tab to open the window switcher.
-        // GUI stays held so you can keep tabbing through windows manually.
+        // LB0+LB1 on BASE/GAME: toggle GUI on, tap Tab to open switcher,
+        // then switch to GUI_NAV so LB0+LB1 becomes a plain Tab tap.
+        // Press LEC to toggle GUI off and return to BASE.
         gui_tab: gui_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI>,
-                       <&macro_tap &kp TAB>;
+            bindings = <&macro_tap &kt LGUI>,
+                       <&macro_tap &kp TAB>,
+                       <&macro_tap &to GUI_NAV>;
+        };
+
+        // LEC on GUI_NAV: toggle GUI off and return to BASE,
+        // restoring LB0+LB1 as the switcher entry combo.
+        gui_exit: gui_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kt LGUI>,
+                       <&macro_tap &to BASE>;
         };
 
         hrm: hrm {
@@ -50,7 +62,7 @@
 &kp ESCAPE,  &kp N1,       &kp N2,       &kp N3,        &kp N4,             &kp N5,                                          &kp N6,             &kp N7,              &kp N8,        &kp N9,       &kp N0,          &kp BACKSPACE,
 &kp TAB,     &kp Q,        &kp W,        &kp E,         &kp R,              &kp T,                                           &kp Y,              &kp U,               &kp I,         &kp O,        &kp P,           &kp DEL,
 &kp LCTRL,   &hrm LGUI A,  &hrm LALT S,  &hrm LCTRL D,  &hrm LEFT_SHIFT F,  &kp G,                                           &kp H,              &hrm RIGHT_SHIFT J,  &hrm RCTRL K,  &hrm RALT L,  &hrm RGUI SEMI,  &kp SQT,
-&kp LSHFT,   &kp Z,        &kp X,        &kp C,         &kp V,              &kp B,          &kp LGUI,       &tog GAME,       &kp N,              &kp M,               &kp COMMA,     &kp DOT,      &kp FSLH,        &kp RSHFT,
+&kp LSHFT,   &kp Z,        &kp X,        &kp C,         &kp V,              &kp B,          &kt LGUI,       &tog GAME,       &kp N,              &kp M,               &kp COMMA,     &kp DOT,      &kp FSLH,        &kp RSHFT,
 &kp LCTRL,   &kp LALT,     &trans,       &trans,        &lt NUM ESCAPE,     &lt MOUSE SPACE,&lt MACRO TAB,  &lt SYMBOL ENTER,&lt NAV BACKSPACE,  &lt FUNC DEL,        &trans,        &trans,       &kp F13,         &kp F14
             )>;
 
@@ -134,5 +146,17 @@
             )>;
         };
 
+        // Transparent pass-through while cycling windows with GUI held.
+        // LB0+LB1 taps Tab, LEC exits (toggles GUI off, returns to BASE).
+        gui_nav {
+            display-name = "GUI Nav";
+            bindings = < LAYER_FROM64( \
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                      &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                      &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                      &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &gui_exit,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,     &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans
+            )>;
+        };
     };
 };

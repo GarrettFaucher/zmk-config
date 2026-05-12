@@ -22,7 +22,9 @@
         compatible = "zmk,combos";
 
 // COMBO(ctrlalttab, &kp LA(LC(TAB)), 	LB0 LB1, BASE GAME, 80, 50)
-    // LB0+LB1: hold GUI and tap Tab to open the window switcher
-    COMBO(gui_tab, &gui_tab, LB0 LB1, BASE GAME, 80, 50)    
+    // LB0+LB1: toggle GUI on, open switcher, enter GUI_NAV layer
+    COMBO(gui_tab,   &gui_tab,  LB0 LB1, BASE GAME, 80, 50)
+    // LB0+LB1 on GUI_NAV: cycle to next window (GUI still held)
+    COMBO(gui_cycle, &kp TAB,   LB0 LB1, GUI_NAV,   80, 50)    
     };
 };
