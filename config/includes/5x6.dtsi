@@ -28,6 +28,25 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
+
+        gui_press: gui_press {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>;
+        };
+
+        gui_release: gui_release {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release &kp LGUI>;
+        };
+
+        toggle_gui: toggle_gui {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&gui_press>, <&gui_release>;
+        };
     };
 
     sensors { triggers-per-rotation = <20>; };

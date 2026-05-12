@@ -490,6 +490,5 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [41, 40]
-  k: Alt+Ctl+↹
+  k: '&toggle_gui'
   l: [Base, Game]
-  a: bottom

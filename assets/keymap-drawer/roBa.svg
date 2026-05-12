@@ -335,12 +335,8 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 88%">Function</tspan></text>
 </a></g>
 <g class="combo combopos-0">
-<path d="M225,184 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
-<path d="M225,184 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-12" class="combo"/>
-<rect rx="6" ry="6" x="211" y="171" width="28" height="26" class="combo"/>
-<text x="225" y="184" class="combo tap">
-<tspan x="225" dy="-0.6em">Alt+Ctl</tspan><tspan x="225" dy="1.2em">+↹</tspan>
-</text>
+<rect rx="6" ry="6" x="211" y="138" width="28" height="26" class="combo"/>
+<text x="225" y="151" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_gui</tspan></text>
 </g>
 </g>
 </g>
@@ -523,12 +519,8 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M225,184 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
-<path d="M225,184 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-12" class="combo"/>
-<rect rx="6" ry="6" x="211" y="171" width="28" height="26" class="combo"/>
-<text x="225" y="184" class="combo tap">
-<tspan x="225" dy="-0.6em">Alt+Ctl</tspan><tspan x="225" dy="1.2em">+↹</tspan>
-</text>
+<rect rx="6" ry="6" x="211" y="138" width="28" height="26" class="combo"/>
+<text x="225" y="151" class="combo tap"><tspan style="font-size: 64%">&amp;toggle_gui</tspan></text>
 </g>
 </g>
 </g>
