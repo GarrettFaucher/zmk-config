@@ -43,8 +43,8 @@ layers:
   - C
   - V
   - B
+  - Gui
   - Toggle Game
-  - Mute
   - N
   - M
   - ','
@@ -104,8 +104,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Toggle Game
   - {t: ▽, type: trans}
+  - Toggle Game
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -553,6 +553,7 @@ combos:
 - p: [41, 40]
   k: '&gui_nav_enter'
   l: [Base, Game]
+  a: bottom
 - p: [41, 40]
   k: '&gui_nav_exit'
   l: [GUI Nav]
