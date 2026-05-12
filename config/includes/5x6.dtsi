@@ -20,18 +20,22 @@
 
 / {
     behaviors {
+        // GUI window switcher toggle. LB0+LB1 combo enters: holds GUI, taps Tab
+        // to open the switcher, then silently switches to GUI_NAV layer.
+        // While on GUI_NAV, Tab sends GUI+Tab (GUI is physically held).
+        // LB0+LB1 again exits: releases GUI and returns to BASE.
         gui_nav_enter: gui_nav_enter {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp LGUI>,
-                       <&macro_tap &kp TAB>,
-                       <&macro_tap &to GUI_NAV>;
+            bindings = <&macro_press &kp LGUI>,  // hold GUI — stays held until exit
+                       <&macro_tap &kp TAB>,      // open switcher
+                       <&macro_tap &to GUI_NAV>;  // silent layer switch, not sent to OS
         };
 
         gui_nav_exit: gui_nav_exit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_release &kp LGUI>,
+            bindings = <&macro_release &kp LGUI>,  // release the held GUI
                        <&macro_tap &to BASE>;
         };
 
