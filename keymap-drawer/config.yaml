@@ -43,8 +43,18 @@ parse_config:
     '&msc SCRL_RIGHT': Scroll →
 
   zmk_combos:
-    combo_ctrlalttab: {align: bottom}
-    combo_gui_tab: {align: bottom}
+    combo_gui_tab:
+      align: bottom
+      key:
+        tap: Alt+Tab
+    combo_gui_cycle:
+      align: bottom
+      key:
+        tap: Cycle Win
+    combo_window_snap:
+      align: bottom
+      key:
+        tap: Window Tiling
 
   zmk_keycode_map:
     LCTRL: Ctrl

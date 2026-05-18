@@ -389,9 +389,14 @@ layers:
   - {t: ▽, type: trans}
 combos:
 - p: [29, 28]
-  k: '&gui_tab'
+  k: Alt+Tab
   l: [Base, Game]
   a: bottom
 - p: [29, 28]
-  k: ↹
+  k: Cycle Win
   l: [GUI Nav]
+  a: bottom
+- p: [5, 4]
+  k: Window Tiling
+  l: [Base]
+  a: bottom

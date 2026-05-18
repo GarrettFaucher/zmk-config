@@ -409,7 +409,15 @@ path.combo { stroke: #7f7f7f; }
 <path d="M280,250 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
 <path d="M280,250 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-16" class="combo"/>
 <rect rx="6" ry="6" x="266" y="237" width="28" height="26" class="combo"/>
-<text x="280" y="250" class="combo tap"><tspan style="font-size: 88%">&amp;gui_tab</tspan></text>
+<text x="280" y="250" class="combo tap">Alt+Tab</text>
+</g>
+<g class="combo combopos-1">
+<path d="M280,138 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<path d="M280,138 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-16" class="combo"/>
+<rect rx="6" ry="6" x="266" y="125" width="28" height="26" class="combo"/>
+<text x="280" y="138" class="combo tap">
+<tspan x="280" dy="-0.6em">Window</tspan><tspan x="280" dy="1.2em">Tiling</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -667,7 +675,7 @@ path.combo { stroke: #7f7f7f; }
 <path d="M280,250 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
 <path d="M280,250 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-16" class="combo"/>
 <rect rx="6" ry="6" x="266" y="237" width="28" height="26" class="combo"/>
-<text x="280" y="250" class="combo tap"><tspan style="font-size: 88%">&amp;gui_tab</tspan></text>
+<text x="280" y="250" class="combo tap">Alt+Tab</text>
 </g>
 </g>
 </g>
@@ -2461,8 +2469,12 @@ path.combo { stroke: #7f7f7f; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="266" y="203" width="28" height="26" class="combo"/>
-<text x="280" y="216" class="combo tap">↹</text>
+<path d="M280,250 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<path d="M280,250 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-16" class="combo"/>
+<rect rx="6" ry="6" x="266" y="237" width="28" height="26" class="combo"/>
+<text x="280" y="250" class="combo tap">
+<tspan x="280" dy="-0.6em">Cycle</tspan><tspan x="280" dy="1.2em">Win</tspan>
+</text>
 </g>
 </g>
 </g>

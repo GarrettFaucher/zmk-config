@@ -40,6 +40,20 @@
                        <&macro_tap &to BASE>;
         };
 
+        // LT0+LT1: hold LGUI+LCTRL and activate NUM layer for window snapping.
+        window_snap: window_snap {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_press &kp LCTRL>
+                , <&macro_press &mo NUM>
+                , <&macro_pause_for_release>
+                , <&macro_release &mo NUM>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LGUI>;
+        };
+
         hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
