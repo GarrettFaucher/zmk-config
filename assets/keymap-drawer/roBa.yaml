@@ -94,12 +94,12 @@ layers:
   - BT 3
   - BT 4
   - BT Clear
-  - Out Toggle
-  - ⏮
-  - ⏯
-  - ⏯
-  - ⏭
   - {t: ▽, type: trans}
+  - Ctl+Alt+1
+  - Ctl+Alt+2
+  - Ctl+Alt+3
+  - Ctl+Alt+4
+  - Out Toggle
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

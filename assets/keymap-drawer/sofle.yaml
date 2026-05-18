@@ -141,14 +141,14 @@ layers:
   - BT 3
   - BT 4
   - BT Clear
+  - {t: ▽, type: trans}
+  - Ctl+Alt+1
+  - Ctl+Alt+2
+  - Ctl+Alt+3
+  - Ctl+Alt+4
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Out Toggle
-  - ⏮
-  - ⏯
-  - ⏯
-  - ⏭
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
