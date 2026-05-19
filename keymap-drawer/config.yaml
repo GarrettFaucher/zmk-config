@@ -18,12 +18,22 @@ parse_config:
     '&bt BT_CLR': BT Clear
 
     '&tog GAME': Toggle Game
+    '&gui_exit': Gui Exit
 
     '&kp LC(LS(ESCAPE))': Task Mgr
     '&kp LS(LG(S))': Screenshot
     '&kp LA(LC(G))': Alt+Ctrl+G
     '&kp LC(Y)': Redo
     '&kp LC(Z)': Undo
+
+    '&kp LC(LA(N1))': Wksp 1
+    '&kp LC(LA(N2))': Wksp 2
+    '&kp LC(LA(N3))': Wksp 3
+    '&kp LC(LA(N4))': Wksp 4
+    '&kp LC(LA(N5))': Wksp 5
+    '&kp LC(LA(N6))': Wksp 6
+    '&kp LC(LA(N7))': Wksp 7
+    '&kp LC(LA(N8))': Wksp 8
 
     '&mkp MB1': Left Click
     '&mkp MB2': Right Click

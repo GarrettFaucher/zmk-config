@@ -88,16 +88,16 @@ layers:
   - {t: ▽, type: trans}
   Navigation:
   - {t: ▽, type: trans}
-  - Ctl+Alt+1
-  - Ctl+Alt+2
-  - Ctl+Alt+3
-  - Ctl+Alt+4
+  - Wksp 1
+  - Wksp 2
+  - Wksp 3
+  - Wksp 4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+Alt+5
-  - Ctl+Alt+6
-  - Ctl+Alt+7
-  - Ctl+Alt+8
+  - Wksp 5
+  - Wksp 6
+  - Wksp 7
+  - Wksp 8
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
