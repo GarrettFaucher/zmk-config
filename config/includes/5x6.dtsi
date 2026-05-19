@@ -97,20 +97,20 @@
         nav {
             display-name = "Navigation";
             bindings = < LAYER_FROM64( \
-&trans,  &trans,        &trans,         &trans,        &trans,        &trans,                        &trans,      &kp F13,       &kp F14,       &trans,        &trans,        &trans,
-&trans,  &bt BT_SEL 0,  &bt BT_SEL 1,   &bt BT_SEL 2,  &bt BT_SEL 3,  &bt BT_CLR,                    &trans,      &kp LC(LA(N1)),&kp LC(LA(N2)),&kp LC(LA(N3)),&kp LC(LA(N4)),&trans,
-&trans,  &out OUT_TOG,  &trans,         &trans,        &trans,        &caps_word,                    &caps_word,  &kp LEFT,      &kp DOWN,      &kp UP,        &kp RIGHT,     &trans,
-&trans,  &trans,        &trans,         &trans,        &trans,        &trans,      &trans,  &trans,  &trans,      &kp HOME,      &kp PG_DN,     &kp PG_UP,     &kp END,       &trans,
-&trans,  &trans,        &trans,         &trans,        &trans,        &trans,      &trans,  &trans,  &trans,      &trans,        &trans,        &trans,        &trans,        &trans
+&trans,  &trans,        &trans,        &trans,        &trans,        &trans,                        &trans,     &trans,        &trans,        &trans,        &trans,        &trans,
+&trans,  &kp LC(LA(N1)),&kp LC(LA(N2)),&kp LC(LA(N3)),&kp LC(LA(N4)),&trans,                        &trans,     &kp LC(LA(N5)),&kp LC(LA(N6)),&kp LC(LA(N7)),&kp LC(LA(N8)),&trans,
+&trans,  &trans,        &trans,        &trans,        &trans,        &caps_word,                    &caps_word, &kp LEFT,      &kp DOWN,      &kp UP,        &kp RIGHT,     &trans,
+&trans,  &trans,        &trans,        &trans,        &trans,        &trans,      &trans,  &trans,  &trans,     &kp HOME,      &kp PG_DN,     &kp PG_UP,     &kp END,       &trans,
+&trans,  &trans,        &trans,        &trans,        &trans,        &trans,      &trans,  &trans,  &trans,     &trans,        &trans,        &trans,        &trans,        &trans
             )>;
         };
 
         macro {
             display-name = "Macro";
             bindings = < LAYER_FROM64( \
-&bootloader,  &bt BT_SEL 0,        &bt BT_SEL 1,   &bt BT_SEL 2,  &bt BT_SEL 3,  &bt BT_CLR,                &trans,  &trans,          &trans,  &trans,  &trans,  &trans,
-&trans,       &trans,              &trans,         &trans,        &trans,        &trans,                    &trans,  &studio_unlock,  &trans,  &trans,  &trans,  &trans,
-&trans,       &kp LC(LS(ESCAPE)),  &kp LS(LG(S)),  &trans,        &trans,        &kp LA(LC(G)),             &trans,  &trans,          &trans,  &trans,  &trans,  &trans,
+&bootloader,  &trans,              &trans,         &trans,        &trans,        &trans,                    &trans,  &trans,          &trans,  &trans,  &trans,  &trans,
+&trans,       &bt BT_SEL 0,        &bt BT_SEL 1,   &bt BT_SEL 2,  &bt BT_SEL 3,  &bt BT_CLR,                &trans,  &studio_unlock,  &trans,  &trans,  &trans,  &trans,
+&trans,       &kp LC(LS(ESCAPE)),  &kp LS(LG(S)),  &trans,        &out OUT_TOG,  &trans,                    &trans,  &trans,          &trans,  &trans,  &trans,  &trans,
 &trans,       &trans,              &trans,         &trans,        &trans,        &trans,  &trans,  &trans,  &trans,  &trans,          &trans,  &trans,  &trans,  &trans,
 &trans,       &trans,              &trans,         &trans,        &trans,        &trans,  &trans,  &trans,  &trans,  &trans,          &trans,  &trans,  &trans,  &trans
             )>;
@@ -119,7 +119,7 @@
         symbol {
             display-name = "Symbol";
             bindings = < LAYER_FROM64( \
-&trans,  &trans,            &trans,         &trans,            &trans,             &trans,                        &tog GAME,  &trans,      &trans,                &trans,                 &ext_power EP_TOG,  &bootloader,
+&trans,  &trans,            &trans,         &trans,            &trans,             &trans,                        &trans,     &trans,      &trans,                &trans,                 &ext_power EP_TOG,  &bootloader,
 &trans,  &kp SINGLE_QUOTE,  &kp LESS_THAN,  &kp GREATER_THAN,  &kp DOUBLE_QUOTES,  &kp PERIOD,                    &kp AMPS,   &kp UNDER,   &kp LEFT_BRACKET,      &kp RIGHT_BRACKET,      &kp PERCENT,        &trans,
 &trans,  &kp EXCL,          &kp MINUS,      &kp PLUS,          &kp EQUAL,          &kp HASH,                      &kp PIPE,   &kp COLON,   &kp LEFT_PARENTHESIS,  &kp RIGHT_PARENTHESIS,  &kp QUESTION,       &trans,
 &trans,  &kp CARET,         &kp SLASH,      &kp STAR,          &kp BACKSLASH,      &kp UNDER,   &trans,  &trans,  &kp TILDE,  &kp DOLLAR,  &kp LEFT_BRACE,        &kp RIGHT_BRACE,        &kp AT,             &trans,
@@ -153,7 +153,7 @@
             display-name = "Mouse";
             bindings = < LAYER_FROM64( \
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,                    &trans,  &trans,   &trans,   &trans,   &trans,   &trans,
-&trans,    &trans,  &trans,   &trans,   &trans,   &out OUT_TOG,              &trans,  &trans,   &trans,   &trans,   &trans,   &trans,
+&trans,    &trans,  &trans,   &trans,   &trans,   &trans,                    &trans,  &trans,   &trans,   &trans,   &trans,   &trans,
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,                    &trans,  &mkp MB1, &mkp MB3, &mkp MB2,   &trans,   &trans,
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,  &trans,  &trans,  &trans,  &trans,   &trans,   &trans,   &trans,   &trans,
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,  &trans,  &trans,  &trans,  &trans,   &trans,   &trans,   &trans,   &trans
@@ -165,9 +165,9 @@
         gui_nav {
             display-name = "GUI Nav";
             bindings = < LAYER_FROM64( \
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                      &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                      &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                      &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                       &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                       &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
+&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                       &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
 &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &gui_exit,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
 &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,     &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans
             )>;

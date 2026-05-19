@@ -132,17 +132,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F13
-  - F14
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT Clear
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+Alt+1
   - Ctl+Alt+2
@@ -150,7 +144,13 @@ layers:
   - Ctl+Alt+4
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Out Toggle
+  - Ctl+Alt+5
+  - Ctl+Alt+6
+  - Ctl+Alt+7
+  - Ctl+Alt+8
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -188,23 +188,23 @@ layers:
   - {t: ▽, type: trans}
   Macro:
   - Boot
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - BT 1
   - BT 2
   - BT 3
   - BT 4
   - BT Clear
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Studio
   - {t: ▽, type: trans}
@@ -215,8 +215,8 @@ layers:
   - Task Mgr
   - Screenshot
   - {t: ▽, type: trans}
+  - Out Toggle
   - {t: ▽, type: trans}
-  - Alt+Ctrl+G
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -255,7 +255,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Toggle Game
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -452,7 +452,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Out Toggle
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
