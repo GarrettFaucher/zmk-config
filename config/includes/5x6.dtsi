@@ -97,11 +97,11 @@
         nav {
             display-name = "Navigation";
             bindings = < LAYER_FROM64( \
-&trans,  &trans,        &trans,        &trans,        &trans,        &trans,                        &trans,     &trans,        &trans,        &trans,        &trans,        &trans,
-&trans,  &kp LC(LA(N1)),&kp LC(LA(N2)),&kp LC(LA(N3)),&kp LC(LA(N4)),&trans,                        &trans,     &kp LC(LA(N5)),&kp LC(LA(N6)),&kp LC(LA(N7)),&kp LC(LA(N8)),&trans,
-&trans,  &trans,        &trans,        &trans,        &trans,        &caps_word,                    &caps_word, &kp LEFT,      &kp DOWN,      &kp UP,        &kp RIGHT,     &trans,
-&trans,  &trans,        &trans,        &trans,        &trans,        &trans,      &trans,  &trans,  &trans,     &kp HOME,      &kp PG_DN,     &kp PG_UP,     &kp END,       &trans,
-&trans,  &trans,        &trans,        &trans,        &trans,        &trans,      &trans,  &trans,  &trans,     &trans,        &trans,        &trans,        &trans,        &trans
+&trans,  &trans,        &trans,        &trans,        &trans,        &trans,                          &trans,        &trans,        &trans,        &trans,        &trans,        &trans,
+&trans,  &kp LC(LA(N1)),&kp LC(LA(N2)),&kp LC(LA(N3)),&kp LC(LA(N4)),&kp LC(LA(N5)),                  &kp LC(LA(N6)),&kp LC(LA(N7)),&kp LC(LA(N8)),&kp LC(LA(N9)),&kp LC(LA(N0)),&trans,
+&trans,  &trans,        &trans,        &trans,        &trans,        &caps_word,                      &caps_word,    &kp LEFT,      &kp DOWN,      &kp UP,        &kp RIGHT,     &trans,
+&trans,  &trans,        &trans,        &trans,        &trans,        &trans,        &trans,  &trans,  &trans,        &kp HOME,      &kp PG_DN,     &kp PG_UP,     &kp END,       &trans,
+&trans,  &trans,        &trans,        &trans,        &trans,        &trans,        &trans,  &trans,  &trans,        &trans,        &trans,        &trans,        &trans,        &trans
             )>;
         };
 

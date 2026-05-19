@@ -92,12 +92,12 @@ layers:
   - Wksp 2
   - Wksp 3
   - Wksp 4
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - Wksp 5
   - Wksp 6
   - Wksp 7
   - Wksp 8
+  - Ctl+Alt+9
+  - Ctl+Alt+0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
