@@ -53,6 +53,10 @@ parse_config:
       align: bottom
       key:
         tap: Window Tiling
+    combo_ptt:
+      align: bottom
+      key:
+        tap: Push To Talk
 
   zmk_keycode_map:
     LCTRL: Ctrl

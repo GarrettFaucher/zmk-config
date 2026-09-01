@@ -31,5 +31,8 @@
     
     // LT0+LT1: hold LGUI+LCTRL and activate NUM layer while held (window snapping).
     COMBO(window_snap, &window_snap, LT0 LT1, BASE, 80, 50)
+
+    // RT0+RT1 (Y+U): hold F13 for push-to-talk. Releases on the first key up.
+    COMBO(ptt, &kp F13, RT0 RT1, BASE GAME, 80, 50)
     };
 };
