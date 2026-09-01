@@ -6,10 +6,6 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-endif
-
-if SHIELD_KEYBALL61_RIGHT
-
 config SPI
     default y
 
