@@ -7,8 +7,11 @@ on:
       - config/*.keymap
       - config/*.conf
       - config/includes/*.dtsi
+      - config/keypos_def/*.h
       - boards/**
       - build.yaml
+      - zephyr/module.yml
+      - .github/workflows/build.yml
 
 jobs:
   build:
