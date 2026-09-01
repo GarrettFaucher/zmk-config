@@ -56,7 +56,7 @@ parse_config:
     combo_ptt:
       align: bottom
       key:
-        tap: Push To Talk
+        tap: PTT
 
   zmk_keycode_map:
     LCTRL: Ctrl
