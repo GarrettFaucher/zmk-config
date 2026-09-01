@@ -562,3 +562,7 @@ combos:
   k: Window Tiling
   l: [Base]
   a: bottom
+- p: [18, 19]
+  k: Push To Talk
+  l: [Base, Game]
+  a: bottom

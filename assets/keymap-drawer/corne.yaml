@@ -400,3 +400,7 @@ combos:
   k: Window Tiling
   l: [Base]
   a: bottom
+- p: [6, 7]
+  k: Push To Talk
+  l: [Base, Game]
+  a: bottom
