@@ -6,4 +6,7 @@
 ![Keymap](assets/keymap-drawer/keyball61.svg)
 
 ## Sofle
-![Keymap](assets/keymap-drawer/sofle.svg
+![Keymap](assets/keymap-drawer/sofle.svg)
+
+## Corne
+![Keymap](assets/keymap-drawer/corne.svg)
