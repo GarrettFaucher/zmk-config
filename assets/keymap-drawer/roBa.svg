@@ -353,9 +353,7 @@ path.combo { stroke: #7f7f7f; }
 <path d="M532,72 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M532,72 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-12" class="combo"/>
 <rect rx="6" ry="6" x="518" y="59" width="28" height="26" class="combo"/>
-<text x="532" y="72" class="combo tap">
-<tspan x="532" dy="-0.6em">Push</tspan><tspan x="532" dy="1.2em">…</tspan>
-</text>
+<text x="532" y="72" class="combo tap">PTT</text>
 </g>
 </g>
 </g>
@@ -547,9 +545,7 @@ path.combo { stroke: #7f7f7f; }
 <path d="M532,72 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
 <path d="M532,72 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-12" class="combo"/>
 <rect rx="6" ry="6" x="518" y="59" width="28" height="26" class="combo"/>
-<text x="532" y="72" class="combo tap">
-<tspan x="532" dy="-0.6em">Push</tspan><tspan x="532" dy="1.2em">…</tspan>
-</text>
+<text x="532" y="72" class="combo tap">PTT</text>
 </g>
 </g>
 </g>

@@ -572,6 +572,6 @@ combos:
   l: [Base]
   a: bottom
 - p: [18, 19]
-  k: Push To Talk
+  k: PTT
   l: [Base, Game]
   a: bottom
