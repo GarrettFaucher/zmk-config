@@ -5,6 +5,8 @@ on:
     paths:
       - 'config/*.keymap'
       - 'config/includes/*.dtsi'
+      - 'config/keypos_def/*.h'
+      - 'keymap-drawer/layouts/*.json'
       - keymap-drawer/config.yaml
       - .github/workflows/draw-keymaps.yml
 
@@ -19,4 +21,4 @@ jobs:
       output_folder: "assets/keymap-drawer"
       install_branch: main
       json_path: keymap-drawer/layouts
-      amend_commit: true
+      amend_commit: false
