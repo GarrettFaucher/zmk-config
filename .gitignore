@@ -1,0 +1,4 @@
+build/
+.west/
+__pycache__/
+*.uf2
