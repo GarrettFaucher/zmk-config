@@ -9,8 +9,9 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
-# Set this to the number of peripherals your dongle will have.
-# For a unibody, this would be 1. If you have left and right halves, set it to 2, etc.
+# Capacity for swapping multiple Sofle halves in and out against one dongle,
+# not a per-keyboard count. Slots are assigned lowest-free-first and persisted
+# by MAC in settings, so each half keeps its index across reconnects.
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
     default 6
 
