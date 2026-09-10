@@ -30,6 +30,10 @@
         compatible = "zmk,kscan-gpio-charlieplex";
         wakeup-source;
 
+        // Idle scan rate; binding default of 1ms is a permanent full-matrix
+        // rescan that nothing suspends. Pressed keys still scan at 1ms.
+        poll-period-ms = <5>;
+
         gpios
             = <&pro_micro 4 GPIO_ACTIVE_HIGH>
             , <&pro_micro 5 GPIO_ACTIVE_HIGH>

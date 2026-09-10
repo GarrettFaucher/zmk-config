@@ -32,11 +32,10 @@ button, i.e. a keypress could not bring it back.
 Adding `interrupt-gpios` would require a dedicated sense line that the Keyball PCB does not
 have, so it is not an option here.
 
-Instead both halves rely on idle:
+Idle saves nothing here: only backlight, RGB, battery reporting, and display blanking react
+to `ZMK_ACTIVITY_IDLE`. With deep sleep unreachable, both halves run at active current from
+boot until flat.
 
-```
-CONFIG_ZMK_IDLE_TIMEOUT=28800000
-```
-
-That is 8 hours (8 * 60 * 60 * 1000 ms) before dropping into the low-power idle state,
-which a keypress does wake from.
+What bounds the draw is `poll-period-ms = <5>` on `kscan0`. The binding default of `1` is a
+permanent 1 kHz rescan of all 81 cells that nothing suspends; this sets only the idle rate,
+since pressed or debouncing cells still scan at `debounce-scan-period-ms` (1 ms).
