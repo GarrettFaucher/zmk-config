@@ -18,7 +18,6 @@ parse_config:
     '&bt BT_CLR': BT Clear
 
     '&tog GAME': Toggle Game
-    '&gui_exit': Gui Exit
 
     '&kp LC(LS(ESCAPE))': Task Mgr
     '&kp LS(LG(S))': Screenshot
@@ -41,14 +40,10 @@ parse_config:
     '&mkp MB3': Middle Click
 
   zmk_combos:
-    combo_gui_tab:
+    combo_ctrl_alt_tab:
       align: bottom
       key:
-        tap: Gui+Tab
-    combo_gui_cycle:
-      align: bottom
-      key:
-        tap: Cycle Win
+        tap: Ctrl+Alt+Tab
     combo_window_snap:
       align: bottom
       key:

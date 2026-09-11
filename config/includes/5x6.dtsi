@@ -14,32 +14,11 @@
 #define NUM 5
 #define FUNC 6
 #define MOUSE 7
-#define GUI_NAV 8
 
 #include "combos.dtsi"
 
 / {
     behaviors {
-        // LB0+LB1 on BASE/GAME: toggle GUI on, tap Tab to open switcher,
-        // then switch to GUI_NAV so LB0+LB1 becomes a plain Tab tap.
-        // Press LEC to toggle GUI off and return to BASE.
-        gui_tab: gui_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &kt LGUI>,
-                       <&macro_tap &kp TAB>,
-                       <&macro_tap &to GUI_NAV>;
-        };
-
-        // LEC on GUI_NAV: toggle GUI off and return to BASE,
-        // restoring LB0+LB1 as the switcher entry combo.
-        gui_exit: gui_exit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &kt LGUI>,
-                       <&macro_tap &to BASE>;
-        };
-
         // LT0+LT1: hold LGUI+LCTRL and activate NUM layer for window snapping.
         window_snap: window_snap {
             compatible = "zmk,behavior-macro";
@@ -157,19 +136,6 @@
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,                    &trans,  &mkp MB1, &mkp MB3, &mkp MB2,   &trans,   &trans,
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,  &trans,  &trans,  &trans,  &trans,   &trans,   &trans,   &trans,   &trans,
 &trans,    &trans,  &trans,   &trans,   &trans,   &trans,  &trans,  &trans,  &trans,  &trans,   &trans,   &trans,   &trans,   &trans
-            )>;
-        };
-
-        // Transparent pass-through while cycling windows with GUI held.
-        // LB0+LB1 taps Tab, LEC exits (toggles GUI off, returns to BASE).
-        gui_nav {
-            display-name = "GUI Nav";
-            bindings = < LAYER_FROM64( \
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                       &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                       &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,                       &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &gui_exit,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,
-&trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans,     &trans,  &trans,  &trans,  &trans,  &trans,  &trans,  &trans
             )>;
         };
     };
