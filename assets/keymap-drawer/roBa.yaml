@@ -28,7 +28,7 @@ layers:
   - C
   - V
   - B
-  - {t: Gui, h: toggle}
+  - {t: ▽, type: trans}
   - Toggle Game
   - N
   - M
