@@ -20,5 +20,8 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
       revision: main
+    - name: zmk-focus-layer
+      remote: garrettfaucher
+      revision: main
   self:
     path: config
