@@ -9,13 +9,13 @@ include:
   - board: nice_nano_v2
     shield: sofle_dongle dongle_display_091_oled
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_FOCUS_LAYER=y
     artifact-name: sofle_dongle
 
   - board: nice_nano_v2
     shield: sofle_left custom_nice_view_adapter custom_nice_view
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_FOCUS_LAYER=y
     artifact-name: sofle_central_left
 
   - board: nice_nano_v2
@@ -32,7 +32,7 @@ include:
   - board: nice_nano_v2
     shield: corne_left
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=y -DCONFIG_ZMK_FOCUS_LAYER=y
     artifact-name: corne_central_left
 
   - board: nice_nano_v2
@@ -47,6 +47,7 @@ include:
 
   - board: nice_nano_v2
     shield: keyball61_right
+    cmake-args: -DCONFIG_ZMK_FOCUS_LAYER=y
     artifact-name: keyball_right
 
   # ---- roBa ----
@@ -54,6 +55,7 @@ include:
     shield: roBa_R
     artifact-name: roBa_right
     snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_FOCUS_LAYER=y
   - board: seeeduino_xiao_ble
     shield: roBa_L
     artifact-name: roBa_left
